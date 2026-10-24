@@ -1,0 +1,1783 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Прописка в Германии без паники: документы, Wohnungsgeberbestätigung, диалог в Bürgeramt, anmelden/ummelden/abmelden. Интерактивный гайд Stellas.">
+<meta property="og:title" content="Anmeldung: квест на прописку в Германии">
+<meta property="og:description" content="Прописка в Германии без паники: документы, Wohnungsgeberbestätigung, диалог в Bürgeramt, anmelden/ummelden/abmelden. Интерактивный гайд Stellas.">
+<meta name="theme-color" content="#F8EEDC">
+<link rel="icon" href="media/logo.webp">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}</style>
+<title>Anmeldung: квест на прописку в Германии</title>
+<link rel="preload" href="assets/fonts/tiny5-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/tiny5-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/comfortaa-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url(assets/fonts/comfortaa-cyrillic.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url(assets/fonts/comfortaa-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Marck Script';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/marckscript-cyrillic.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Marck Script';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/marckscript-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Tiny5';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/tiny5-cyrillic.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Tiny5';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/tiny5-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<script defer src="assets/gsap-bundle.min.js"></script>
+
+<style>
+:root{
+  color-scheme: light;
+  --cream:#F8EEDC; --cream-2:#F1E2C8; --card:#FFF9EF; --white:#FFFDF8;
+  --ink:#2B2520; --ink-2:#4A4038; --mute:#857868; --line:rgba(43,37,32,.14);
+  --green:#5DBB46; --green-d:#3C9A2C; --green-l:#9BE07A; --lime:#B9F06A;
+  --orange:#F28C38; --orange-l:#F8B36A; --orange-d:#D96C1C;
+  --night:#1F1C1A; --night-2:#2C2723; --red:#E0483A; --sky:#BFE3F2;
+  --gut:16px; --r:22px;
+  --hd:'Tiny5', 'Comfortaa', system-ui, sans-serif;
+  --tx:'Comfortaa', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --sc:'Marck Script', 'Comfortaa', cursive;
+  --torn:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 40' preserveAspectRatio='none'%3E%3Cpath d='M0,40 L0,27 L9,26 L31,23 L40,9 L48,18 L66,26 L74,31 L86,13 L103,11 L113,6 L124,12 L133,16 L148,19 L161,14 L174,11 L193,20 L208,23 L220,24 L230,24 L238,25 L258,23 L277,12 L297,14 L309,14 L317,20 L334,26 L346,20 L359,4 L369,17 L380,19 L394,24 L404,14 L426,7 L442,10 L455,19 L466,19 L477,4 L487,22 L500,17 L510,19 L527,18 L542,24 L563,19 L577,27 L585,8 L600,8 L608,6 L624,6 L632,22 L650,10 L663,24 L678,15 L688,6 L700,15 L716,5 L732,12 L754,5 L772,23 L784,15 L797,21 L817,15 L834,22 L855,22 L875,9 L888,20 L908,10 L927,17 L947,25 L960,23 L973,8 L995,32 L1008,27 L1030,13 L1041,30 L1054,6 L1073,13 L1082,17 L1092,17 L1110,7 L1125,18 L1141,30 L1160,18 L1182,7 L1193,19 L1200,14 L1200,40Z'/%3E%3C/svg%3E");
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 16px/1.55 var(--tx);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;
+  background:radial-gradient(circle at 12% 18%, rgba(255,255,255,.55) 0 18%, transparent 40%),
+             radial-gradient(circle at 88% 70%, rgba(233,210,170,.45) 0 14%, transparent 42%),
+             url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45  0 0 0 0 .36  0 0 0 0 .25  0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+main{position:relative;z-index:1;overflow-x:clip}
+.wrap{max-width:1120px;margin:0 auto;padding:0 var(--gut)}
+section{position:relative;padding:72px 0}
+.ic{width:1.1em;height:1.1em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none;vertical-align:-.18em}
+
+/* ---------- type ---------- */
+.px{font-family:var(--hd);font-weight:400;text-transform:uppercase;letter-spacing:.01em;line-height:.98;color:var(--green);margin:0}
+h2.px{font-size:clamp(34px,9.6vw,84px)}
+h3.px{font-size:clamp(26px,7vw,52px)}
+.px .or{color:var(--orange)}
+.px .wt{color:#fff}
+.px .ink{color:var(--ink)}
+.px .wd{display:inline-block}
+.px .ch{display:inline-block}
+.sc{font-family:var(--sc);font-weight:400;font-size:clamp(24px,6.6vw,40px);line-height:1.1;color:var(--ink);margin:0 0 6px}
+.sc.or{color:var(--orange)}
+.sc.wt{color:#fff}
+.lede{font-size:clamp(15px,4.1vw,19px);line-height:1.6;color:var(--ink-2);max-width:40ch;margin:16px 0 0}
+.lede b{color:var(--ink)}
+.c{text-align:center}.c .lede{margin-left:auto;margin-right:auto}
+.de{font-weight:700;color:var(--green-d)}
+.mut{color:var(--mute)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font:700 11px/1 var(--tx);letter-spacing:.16em;text-transform:uppercase;color:var(--orange-d);margin:0 0 14px}
+
+/* ---------- crystal (plumbob-like gem) ---------- */
+.gem{width:26px;height:40px;display:inline-block;flex:none}
+.gem.big{width:70px;height:108px}
+.float{animation:flo 4s ease-in-out infinite}
+@keyframes flo{0%,100%{translate:0 0}50%{translate:0 -10px}}
+.spin3d{animation:sp3 6s linear infinite}
+@keyframes sp3{0%{scale:1 1}25%{scale:.15 1}50%{scale:-1 1}75%{scale:-.15 1}100%{scale:1 1}}
+html.gs .float, html.gs .spin3d{animation-play-state:running}
+
+/* ---------- buttons ---------- */
+.btn{--b1:#9BE07A;--b2:#48AE33;position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 28px;border:0;border-radius:16px;
+  background:linear-gradient(180deg,var(--b1),var(--b2));color:#fff;text-decoration:none;font:700 14px/1 var(--tx);letter-spacing:.12em;text-transform:uppercase;
+  box-shadow:inset 0 2px 0 rgba(255,255,255,.55), inset 0 -4px 0 rgba(0,0,0,.14), 0 10px 22px -10px rgba(60,154,44,.8);overflow:hidden;isolation:isolate;transition:scale .2s, box-shadow .2s;text-shadow:0 1px 0 rgba(0,0,0,.18)}
+.btn::before{content:"";position:absolute;inset:0;z-index:-1;opacity:.55;background:
+  radial-gradient(circle at 12% 30%,rgba(255,255,255,.7) 0 2px,transparent 3px),radial-gradient(circle at 30% 70%,rgba(255,255,255,.6) 0 1.5px,transparent 2.5px),
+  radial-gradient(circle at 56% 24%,rgba(255,255,255,.6) 0 2px,transparent 3px),radial-gradient(circle at 78% 62%,rgba(255,255,255,.7) 0 1.5px,transparent 2.5px),
+  radial-gradient(circle at 92% 30%,rgba(255,255,255,.5) 0 2px,transparent 3px)}
+.btn::after{content:"";position:absolute;top:0;bottom:0;width:40%;left:-60%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);animation:shine 3.6s ease-in-out infinite}
+@keyframes shine{0%,60%{left:-60%}100%{left:130%}}
+.btn:hover{scale:1.03}
+.btn:active{scale:.97}
+.btn.or{--b1:#FBC07A;--b2:#EE8530;box-shadow:inset 0 2px 0 rgba(255,255,255,.5), inset 0 -4px 0 rgba(0,0,0,.14), 0 10px 22px -10px rgba(217,108,28,.8)}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink);text-shadow:none}
+.btn.ghost::before,.btn.ghost::after{display:none}
+.btn.sm{min-height:44px;padding:0 18px;font-size:12px}
+.btn.wide{width:100%}
+.link{font-weight:700;text-decoration:underline;text-underline-offset:4px;letter-spacing:.06em;text-transform:uppercase;font-size:13px}
+
+.chip{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:var(--orange);color:#fff;font:700 12px/1.2 var(--tx);box-shadow:0 6px 14px -8px rgba(217,108,28,.9)}
+.chip.gr{background:var(--green)}
+.chip.wt{background:#fff;color:var(--ink);box-shadow:0 4px 14px -8px rgba(0,0,0,.4)}
+.say{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;border:0;background:#fff;color:var(--green-d);box-shadow:0 3px 10px -4px rgba(0,0,0,.35);flex:none;transition:scale .2s, background .2s}
+.say svg{width:16px;height:16px}
+.say.on{background:var(--green);color:#fff;scale:1.1}
+html.no-tts .say{display:none}
+
+/* ---------- torn paper ---------- */
+.torn{position:relative}
+.torn::before,.torn::after{content:"";position:absolute;left:0;right:0;height:26px;background:var(--tc,var(--cream));-webkit-mask:var(--torn) center/100% 100% no-repeat;mask:var(--torn) center/100% 100% no-repeat;z-index:2;pointer-events:none}
+.torn::before{top:-1px;transform:scaleY(-1)}
+.torn::after{bottom:-1px}
+.torn.only-b::before,.torn.only-t::after{display:none}
+
+/* ---------- topbar ---------- */
+.topbar{position:sticky;top:0;z-index:50;background:rgba(248,238,220,.92);border-bottom:1px solid var(--line)}
+@media (min-width:900px){.topbar{backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);background:rgba(248,238,220,.78)}}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:58px;gap:10px}
+.brand{display:flex;align-items:center;gap:9px;text-decoration:none}
+.brand img{width:30px;height:30px;border-radius:8px}
+.brand b{font:400 18px/1 var(--hd);color:var(--green);letter-spacing:.04em}
+.tb-right{display:flex;align-items:center;gap:10px}
+.lvl{display:flex;align-items:center;gap:6px;font:700 11px/1 var(--tx);color:var(--ink-2)}
+.lvl .gem{width:16px;height:24px}
+.lvl b{font:400 14px/1 var(--hd);color:var(--green-d);min-width:3ch}
+.prog{position:absolute;left:0;bottom:-1px;height:3px;width:100%;background:linear-gradient(90deg,var(--green),var(--lime));transform-origin:left;transform:scaleX(0)}
+
+/* ---------- hero ---------- */
+.hero{padding:22px 0 70px}
+.h-title{animation:drop .9s cubic-bezier(.2,1.5,.4,1) both}
+.hero-grid{animation:rise 1s .15s cubic-bezier(.2,1.2,.4,1) both}
+@keyframes drop{from{translate:0 -40px;scale:.9}}
+@keyframes rise{from{translate:0 60px}}
+.h-title{text-align:center;margin:8px 0 18px}
+.h-title .px{font-size:clamp(46px,14.5vw,132px)}
+.h-title .sc{margin-top:6px}
+.h-card{position:relative;border-radius:28px;overflow:hidden;background:#cfe9f2;min-height:520px;box-shadow:0 30px 60px -36px rgba(43,37,32,.6);isolation:isolate}
+.h-card>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:56% 30%;z-index:-2}
+.h-card::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(255,255,255,0) 30%,rgba(255,250,240,.2) 48%,rgba(248,238,220,.96) 74%)}
+.h-badges{position:absolute;left:14px;right:14px;top:14px;display:flex;justify-content:space-between;gap:8px}
+.h-badge{display:flex;align-items:center;gap:8px;padding:8px 12px 8px 8px;border-radius:14px;background:rgba(255,253,248,.88);box-shadow:0 6px 18px -10px rgba(0,0,0,.45)}
+.h-badge i{display:grid;place-items:center;width:30px;height:30px;border-radius:9px;background:var(--green);color:#fff}
+.h-badge b{display:block;font:400 17px/1 var(--hd);color:var(--green-d)}
+.h-badge small{display:block;font-size:10px;color:var(--mute)}
+.h-body{position:absolute;left:0;right:0;bottom:0;padding:18px 18px 22px}
+.h-body p{margin:0 0 16px;font-size:14px;line-height:1.55;color:var(--ink-2)}
+.h-body .btn{width:100%}
+.h-gem{position:absolute;right:18px;top:96px}
+.prog-card{margin-top:16px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:14px;padding:18px;border-radius:24px;background:linear-gradient(160deg,var(--orange-l),var(--orange));color:#fff;box-shadow:0 18px 36px -24px rgba(217,108,28,.9)}
+.prog-card h3{font:400 clamp(24px,6.4vw,34px)/1 var(--hd);margin:0 0 8px;text-transform:uppercase}
+.prog-card p{margin:0;font-size:13px;line-height:1.5}
+.pc-gem{position:relative;width:86px;height:86px;border-radius:50%;background:rgba(255,255,255,.22);display:grid;place-items:center;box-shadow:inset 0 0 0 10px rgba(255,255,255,.14)}
+.pc-gem .gem{width:40px;height:62px}
+.pc-gem b{position:absolute;bottom:-6px;right:-6px;padding:4px 7px;border-radius:9px;background:#fff;color:var(--orange-d);font:400 13px/1 var(--hd)}
+.h-side{display:grid;gap:12px;margin-top:16px}
+.side-btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;border-radius:16px;text-decoration:none;color:#fff;font:700 13px/1 var(--tx);letter-spacing:.12em;text-transform:uppercase;background:linear-gradient(180deg,#9BE07A,#48AE33);box-shadow:inset 0 2px 0 rgba(255,255,255,.55), inset 0 -4px 0 rgba(0,0,0,.14)}
+@media (min-width:900px){
+  .hero-grid{display:grid;grid-template-columns:1.7fr 1fr;gap:22px;align-items:stretch}
+  .h-card{min-height:600px}
+  .h-body{right:auto;max-width:560px;padding:28px}
+  .h-body .btn{width:auto}
+  .prog-card{margin-top:0;grid-template-columns:1fr;text-align:center;justify-items:center;height:100%;align-content:center}
+  .pc-gem{width:150px;height:150px}.pc-gem .gem{width:64px;height:100px}
+}
+
+/* ---------- marquee ---------- */
+.band{position:relative;z-index:3;background:var(--green);color:#fff;transform:rotate(-2deg);margin:-8px -20px;padding:12px 0;overflow:hidden;box-shadow:0 10px 24px -14px rgba(60,154,44,.9)}
+.band.or{background:var(--orange);transform:rotate(1.6deg);margin-top:-30px}
+.band .track{display:flex;width:max-content;animation:mq 30s linear infinite}
+html.gs .band .track{animation:none}
+.band span{display:flex;align-items:center;gap:18px;padding-right:18px;font:400 22px/1 var(--hd);text-transform:uppercase;white-space:nowrap}
+.band .gem{width:14px;height:22px}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* ---------- story cards ---------- */
+.story{padding-top:64px}
+.feed{display:grid;grid-auto-flow:column;grid-auto-columns:min(82vw,340px);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px var(--gut) 22px;margin:22px calc(var(--gut)*-1) 0;scrollbar-width:none}
+.feed::-webkit-scrollbar{display:none}
+.st{scroll-snap-align:center;position:relative;min-height:440px;border-radius:24px;padding:22px 20px;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 18px 34px -24px rgba(43,37,32,.7)}
+.st .sc{font-size:26px}
+.st h3{font:400 30px/1 var(--hd);text-transform:uppercase;margin:4px 0 14px}
+.st p{margin:0 0 10px;font-size:14.5px;line-height:1.6}
+.st .num{position:absolute;right:16px;top:16px;font:400 14px/1 var(--hd);opacity:.6}
+.st.dk{background:linear-gradient(180deg,rgba(31,28,26,.82),rgba(31,28,26,.96)),url(media/night.webp) center/cover;color:#EFE6D8}
+.st.dk h3{color:#fff}
+.st.cr{background:var(--card);color:var(--ink)}
+.st.cr h3{color:var(--green)}
+.st.og{background:linear-gradient(170deg,var(--orange-l),var(--orange));color:#fff}
+.st.og h3{color:#fff}
+.st .pic{margin:auto -20px -22px;height:170px;background:center 25%/cover no-repeat;mask:linear-gradient(transparent,#000 40%);-webkit-mask:linear-gradient(transparent,#000 40%)}
+.st .de{color:var(--lime)}
+.st.cr .de{color:var(--green-d)}
+.st.og .de{color:#fff;text-decoration:underline;text-underline-offset:3px}
+.st .dry{margin-top:auto;padding-top:12px;border-top:1px dashed currentColor;font-style:italic;opacity:.9}
+.swipe{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--mute);margin-top:4px}
+@media (min-width:900px){.feed{grid-auto-flow:row;grid-template-columns:repeat(4,1fr);overflow:visible;margin:22px 0 0;padding:6px 0 0}}
+
+/* ---------- map ---------- */
+.map{position:relative;margin-top:26px;padding:10px 0 20px}
+.map svg.path{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.map svg.path path{fill:none;stroke:var(--orange);stroke-width:3;stroke-dasharray:2 10;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.loc{position:relative;display:grid;grid-template-columns:44% 1fr;align-items:center;gap:10px;margin:0 0 18px;border:0;background:none;padding:0;text-align:left;width:100%}
+.loc.rev{grid-template-columns:1fr 44%}
+.loc.rev .isl{order:2}
+.isl{position:relative;aspect-ratio:1;display:block}
+.isl img{width:100%;height:100%;object-fit:cover;-webkit-mask:radial-gradient(closest-side,#000 70%,transparent 100%);mask:radial-gradient(closest-side,#000 70%,transparent 100%);transition:scale .35s}
+.loc:hover .isl img{scale:1.05}
+.isl .pin{position:absolute;left:50%;top:6%;translate:-50% 0;display:grid;place-items:center;width:36px;height:36px;border-radius:50% 50% 50% 0;rotate:-45deg;background:var(--green);color:#fff;box-shadow:0 6px 12px -6px rgba(0,0,0,.6)}
+.isl .pin b{rotate:45deg;font:400 15px/1 var(--hd)}
+.loc h4{margin:0 0 6px;font:700 13px/1.25 var(--tx);letter-spacing:.12em;text-transform:uppercase}
+.loc p{margin:0;font-size:13px;line-height:1.5;color:var(--ink-2)}
+.loc .more{display:inline-flex;align-items:center;gap:4px;margin-top:8px;font-size:12px;font-weight:700;color:var(--orange-d)}
+.hint{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:16px;background:var(--orange);color:#fff;font-size:13px;line-height:1.4;box-shadow:0 10px 20px -12px rgba(217,108,28,.9)}
+.pop{position:fixed;inset:0;z-index:80;display:grid;place-items:end center;padding:16px;background:rgba(31,28,26,.55);opacity:0;pointer-events:none;transition:opacity .25s}
+.pop.open{opacity:1;pointer-events:auto}
+.pop-card{width:min(520px,100%);max-height:86vh;overflow:auto;border-radius:26px;background:var(--card);padding:22px;translate:0 30px;transition:translate .35s cubic-bezier(.2,1.4,.4,1)}
+.pop.open .pop-card{translate:0 0}
+.pop-card img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:16px;margin-bottom:14px}
+.pop-card h3{font:400 28px/1 var(--hd);color:var(--green);text-transform:uppercase;margin:0 0 10px}
+.pop-card ul{margin:10px 0 0;padding:0;list-style:none}
+.pop-card li{display:flex;gap:10px;align-items:flex-start;margin:0 0 10px;font-size:14px;line-height:1.5}
+.pop-card li .gem{width:12px;height:18px;margin-top:2px}
+.pop-x{float:right;width:40px;height:40px;border-radius:50%;border:0;background:var(--cream-2);display:grid;place-items:center}
+@media (min-width:900px){
+  .map{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .loc,.loc.rev{grid-template-columns:1fr;text-align:center}
+  .loc.rev .isl{order:0}
+  .loc.rev{margin-top:90px}
+  .pop{place-items:center}
+}
+
+/* ---------- what ---------- */
+.what-scene{position:relative;margin:26px 0 0;border-radius:26px;background:var(--card);padding:22px 16px;box-shadow:0 18px 36px -28px rgba(43,37,32,.7);overflow:hidden}
+.ws-row{display:grid;grid-template-columns:1fr 44px 1fr;align-items:center;gap:6px}
+.ws-node{text-align:center}
+.ws-node .ws-ic{position:relative;margin:0 auto 10px;width:84px;height:84px;border-radius:24px;display:grid;place-items:center;background:var(--cream-2)}
+.ws-node .ws-ic svg{width:40px;height:40px;color:var(--ink-2)}
+.ws-node b{display:block;font:700 13px/1.3 var(--tx)}
+.ws-node small{color:var(--mute);font-size:12px}
+.ws-arrow{height:3px;background:repeating-linear-gradient(90deg,var(--orange) 0 6px,transparent 6px 11px);position:relative}
+.ws-doc{position:absolute;left:50%;top:44px;width:38px;height:48px;margin-left:-19px;border-radius:6px;background:#fff;box-shadow:0 6px 14px -6px rgba(0,0,0,.4);display:grid;place-items:center;color:var(--green-d)}
+.ws-doc svg{width:22px;height:22px}
+.ws-stamp{position:absolute;right:-12px;top:-12px;width:40px;height:40px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font:400 10px/1 var(--hd);box-shadow:0 0 0 4px rgba(93,187,70,.25);scale:1}
+.ws-cap{margin:16px 0 0;text-align:center;font-size:14px;color:var(--ink-2)}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.fact{border-radius:20px;padding:16px 10px;text-align:center;background:var(--green);color:#fff;box-shadow:inset 0 2px 0 rgba(255,255,255,.3)}
+.fact:nth-child(2){background:var(--orange)}
+.fact:nth-child(3){background:var(--night)}
+.fact b{display:block;font:400 clamp(30px,9vw,54px)/1 var(--hd)}
+.fact span{display:block;margin-top:6px;font-size:11.5px;line-height:1.35}
+.aside{display:flex;gap:12px;align-items:flex-start;margin-top:16px;padding:16px;border-radius:18px;border:2px dashed var(--orange);font-size:14px;line-height:1.5}
+.aside svg{color:var(--orange);margin-top:2px}
+
+/* ---------- stepper (quest levels) ---------- */
+.dark{background:var(--night);color:#EFE6D8}
+.dark .lede{color:#CFC4B4}.dark .lede b{color:#fff}
+.night-bg{position:absolute;inset:0;background:linear-gradient(180deg,rgba(31,28,26,.6),rgba(31,28,26,.96) 60%),url(media/night.webp) center top/cover no-repeat;z-index:0}
+.dark .wrap{position:relative;z-index:1}
+.quest{margin-top:26px}
+.q-track{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:4px;margin:0 6px 18px}
+.q-track::before{content:"";position:absolute;left:10%;right:10%;top:21px;height:3px;background:rgba(255,255,255,.18)}
+.q-fill{position:absolute;left:10%;top:21px;height:3px;width:80%;background:linear-gradient(90deg,var(--green),var(--lime));transform-origin:left;transform:scaleX(0);transition:transform .6s}
+.q-dot{position:relative;z-index:1;display:grid;justify-items:center;gap:6px;border:0;background:none;color:#CFC4B4;font-size:10.5px;padding:0}
+.q-dot i{display:grid;place-items:center;width:44px;height:44px;border-radius:14px;background:var(--night-2);border:2px solid rgba(255,255,255,.16);transition:background .3s, border-color .3s, scale .3s}
+.q-dot i svg{width:20px;height:20px}
+.q-dot.done i{background:var(--green-d);border-color:var(--green)}
+.q-dot.cur i{background:var(--orange);border-color:var(--orange-l);scale:1.12;color:#fff}
+.q-dot span{font-weight:700;letter-spacing:.04em}
+.q-stage{position:relative;border-radius:24px;background:var(--card);color:var(--ink);overflow:hidden;min-height:380px}
+.q-slide{position:absolute;inset:0;display:grid;grid-template-rows:170px 1fr;opacity:0;visibility:hidden;transition:opacity .45s, visibility .45s}
+.q-slide.on{opacity:1;visibility:visible;position:relative}
+.q-slide .qi{background:center/cover no-repeat;position:relative}
+.q-slide .qi::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:22px;background:var(--card);-webkit-mask:var(--torn) center/100% 100% no-repeat;mask:var(--torn) center/100% 100% no-repeat}
+.q-slide .qt{padding:16px 18px 20px}
+.q-slide .lv{font:400 13px/1 var(--hd);color:var(--orange-d);letter-spacing:.06em}
+.q-slide h3{font:400 clamp(24px,7vw,34px)/1 var(--hd);text-transform:uppercase;color:var(--green);margin:6px 0 8px;word-break:break-word}
+.q-slide p{margin:0 0 12px;font-size:14px;line-height:1.55;color:var(--ink-2)}
+.phr{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:14px;background:var(--cream);font-size:14px}
+.phr b{font-weight:700;color:var(--green-d)}
+.phr small{display:block;color:var(--mute);font-size:12px}
+.q-ctrl{display:flex;gap:10px;margin-top:14px}
+.q-ctrl .btn{flex:1}
+
+/* ---------- cast ---------- */
+.cast{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}
+.who{position:relative;min-width:0}
+.phr{min-width:0}.phr b{overflow-wrap:anywhere}
+.who .ph{position:relative;aspect-ratio:3/4;border-radius:22px;overflow:hidden;box-shadow:0 14px 28px -20px rgba(0,0,0,.8)}
+.who .ph img{width:100%;height:100%;object-fit:cover}
+.who .rib{position:absolute;left:8px;right:8px;bottom:-14px;padding:7px 10px;border-radius:12px;background:var(--orange);color:#fff;text-align:center;font:400 clamp(17px,4.8vw,24px)/1 var(--sc);transform:skewX(-8deg) rotate(-2deg);box-shadow:0 8px 16px -10px rgba(217,108,28,.9)}
+.who p{margin:24px 4px 8px;text-align:center;font-size:12.5px;line-height:1.5;color:var(--ink-2)}
+.who .phr{font-size:12.5px;padding:8px 10px;gap:8px}
+.who .phr .say{width:30px;height:30px}
+.dark .who p{color:#CFC4B4}
+@media (min-width:900px){.cast{grid-template-columns:repeat(4,1fr);gap:20px}}
+
+/* ---------- inventory ---------- */
+.inv{margin-top:26px;display:grid;gap:16px}
+.bag{position:relative;display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:center;padding:16px;border-radius:24px;background:linear-gradient(160deg,var(--green-l),var(--green));color:#fff;box-shadow:inset 0 2px 0 rgba(255,255,255,.35), 0 16px 30px -22px rgba(60,154,44,.9)}
+.bag .bico{position:relative;width:76px;height:76px;border-radius:22px;background:rgba(255,255,255,.25);display:grid;place-items:center}
+.bag .bico svg{width:40px;height:40px}
+.bag .bico b{position:absolute;right:-8px;top:-8px;min-width:30px;height:30px;border-radius:15px;padding:0 6px;background:#fff;color:var(--green-d);display:grid;place-items:center;font:400 14px/1 var(--hd)}
+.bag h4{margin:0 0 4px;font:400 22px/1 var(--hd);text-transform:uppercase}
+.bag p{margin:0;font-size:13px;line-height:1.45}
+.bag.full{background:linear-gradient(160deg,#FBD38D,var(--orange))}
+.slots{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.slot{position:relative;display:grid;justify-items:center;align-content:start;gap:8px;padding:14px 6px 12px;border-radius:18px;border:0;background:var(--card);box-shadow:0 8px 18px -14px rgba(0,0,0,.6), inset 0 0 0 2px transparent;text-align:center;font-size:11.5px;line-height:1.25;transition:box-shadow .25s, background .25s, opacity .3s}
+.slot .si{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--cream-2);color:var(--ink-2)}
+.slot .si svg{width:24px;height:24px}
+.slot b{font-weight:700;word-break:break-word;hyphens:auto}
+.slot small{color:var(--mute);font-size:10.5px}
+.slot.got{box-shadow:inset 0 0 0 2px var(--green);background:#F2FBEA}
+.slot.got .si{background:var(--green);color:#fff}
+.slot.no{box-shadow:inset 0 0 0 2px var(--red);background:#FDEDEA}
+.slot.no .si{background:var(--red);color:#fff}
+.inv-msg{display:flex;gap:10px;align-items:flex-start;min-height:72px;padding:14px 16px;border-radius:18px;background:var(--night);color:#EFE6D8;font-size:13.5px;line-height:1.5}
+.inv-msg svg{margin-top:2px;color:var(--lime)}
+.inv-msg.bad svg{color:#FF8A7A}
+.flyer{position:absolute;z-index:60;width:40px;height:40px;border-radius:12px;background:var(--green);color:#fff;display:grid;place-items:center;pointer-events:none}
+.flyer svg{width:22px;height:22px}
+@media (min-width:900px){.inv{grid-template-columns:1fr 1.4fr;align-items:start}.slots{grid-template-columns:repeat(3,1fr)}}
+
+/* ---------- melden machine ---------- */
+.mach{margin-top:26px;border-radius:26px;background:var(--card);padding:20px 16px;box-shadow:0 18px 36px -28px rgba(43,37,32,.7)}
+.pfx{display:flex;gap:8px;justify-content:center;margin-bottom:18px}
+.pfx button{min-width:76px;height:46px;border-radius:14px;border:0;background:var(--cream-2);font:400 20px/1 var(--hd);color:var(--ink-2);transition:background .25s, color .25s, scale .25s}
+.pfx button.on{background:var(--green);color:#fff;scale:1.06;box-shadow:inset 0 2px 0 rgba(255,255,255,.35)}
+.word{display:flex;justify-content:center;align-items:baseline;font:400 clamp(44px,13vw,92px)/1 var(--hd);text-transform:lowercase}
+.word .p{color:var(--orange);display:inline-block}
+.word .r{color:var(--green)}
+.mean{margin:14px auto 0;max-width:34ch;text-align:center}
+.mean .sc{font-size:30px}
+.mean p{margin:4px 0 0;font-size:14px;color:var(--ink-2)}
+.mean .phr{justify-content:center;margin-top:12px;background:var(--cream)}
+.life{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:16px}
+.life div{padding:12px 8px;border-radius:16px;background:var(--cream);text-align:center;font-size:11.5px;line-height:1.35;transition:background .25s, color .25s}
+.life div svg{width:24px;height:24px;display:block;margin:0 auto 6px;color:var(--ink-2)}
+.life div.on{background:var(--green);color:#fff}
+.life div.on svg{color:#fff}
+
+.flight{position:relative;margin-top:18px;border-radius:26px;background:var(--night);color:#fff;padding:22px 16px 18px;overflow:hidden}
+.fl-step{font:700 11px/1 var(--tx);letter-spacing:.14em;text-transform:uppercase;color:var(--lime);margin:0 0 14px;min-height:12px}
+.fl-line{position:relative;display:flex;flex-wrap:wrap;justify-content:center;align-items:baseline;gap:.1em .35em;min-height:2.4em;align-content:center;font:400 clamp(26px,7.6vw,56px)/1.15 var(--hd)}
+.fl-line .t{display:inline-block;color:#fff}
+.fl-line .pa{color:var(--orange)}
+.fl-line .ge{color:var(--lime)}
+.fl-line .x{position:relative;color:#FF8A7A}
+.fl-line .x::after{content:"";position:absolute;left:-4%;right:-4%;top:52%;height:4px;background:#FF8A7A;rotate:-6deg;border-radius:2px}
+.fl-cap{margin:14px 0 0;text-align:center;font-size:14px;line-height:1.5;color:#CFC4B4;min-height:42px}
+.fl-cap b{color:#fff}
+.fl-ctrl{display:flex;justify-content:center;gap:6px;margin-top:12px}
+.fl-ctrl i{width:26px;height:6px;border-radius:3px;background:rgba(255,255,255,.2);transition:background .3s}
+.fl-ctrl i.on{background:var(--lime)}
+
+/* ---------- form ---------- */
+.form{margin-top:26px;border-radius:22px;background:#fff;box-shadow:0 22px 40px -28px rgba(43,37,32,.7);overflow:hidden}
+.form-h{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 16px;background:var(--green);color:#fff}
+.form-h b{font:400 18px/1 var(--hd);text-transform:uppercase}
+.form-h small{font-size:11px;opacity:.9}
+.fld{display:grid;grid-template-columns:1fr;gap:4px;padding:12px 16px;border-bottom:1px solid var(--line);border-left:0;border-right:0;border-top:0;background:#fff;width:100%;text-align:left}
+.fld .lb{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:12px;font-weight:700;color:var(--ink-2)}
+.fld .lb em{font-style:normal;font-weight:400;color:var(--orange-d);font-size:11.5px}
+.fld .val{min-height:26px;font:700 17px/1.4 'Courier New',ui-monospace,monospace;color:#1F3FA8}
+.fld .val::after{content:"";display:inline-block;width:2px;height:1em;margin-left:2px;vertical-align:-.12em;background:#1F3FA8;opacity:0}
+.fld.typing .val::after{opacity:1;animation:blink .7s step-end infinite}
+@keyframes blink{50%{opacity:0}}
+.fld.trap{background:#FFF6EA}
+.opts{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.opts button{border:0;padding:8px 12px;border-radius:10px;background:var(--cream-2);font-size:13px;font-weight:700;transition:background .2s, color .2s}
+.opts button.on{background:var(--green);color:#fff}
+.opts button.warn{background:var(--red);color:#fff}
+.trapmsg{display:none;margin-top:8px;padding:10px 12px;border-radius:12px;background:var(--red);color:#fff;font-size:13px;line-height:1.45}
+.trapmsg.ok{background:var(--green)}
+.trapmsg.show{display:block}
+
+/* ---------- dialog ---------- */
+.chat{margin-top:26px;display:grid;gap:12px;padding-right:10px}
+.msg{display:grid;grid-template-columns:44px 1fr;gap:10px;align-items:end;max-width:560px}
+.msg .av{width:44px;height:44px;border-radius:50%;background:center/cover no-repeat;box-shadow:0 0 0 3px #fff}
+.msg .bub{position:relative;padding:12px 14px;border-radius:18px 18px 18px 6px;background:#fff;box-shadow:0 8px 18px -14px rgba(0,0,0,.6)}
+.msg .bub b{display:block;font-size:15px;line-height:1.45;color:var(--ink)}
+.msg .bub small{display:block;margin-top:4px;color:var(--mute);font-size:12.5px;line-height:1.4}
+.msg .bub .say{position:absolute;right:-10px;top:-10px;width:30px;height:30px}
+.msg.me{grid-template-columns:1fr 44px;justify-self:end}
+.msg.me .av{order:2}
+.msg.me .bub{border-radius:18px 18px 6px 18px;background:var(--green);}
+.msg.me .bub b{color:#fff}.msg.me .bub small{color:#E9F8E2}
+.msg .who-n{display:block;font:700 10px/1 var(--tx);letter-spacing:.14em;text-transform:uppercase;color:var(--orange-d);margin-bottom:6px}
+.msg.me .who-n{color:#E9F8E2}
+.dry-line{margin:18px 0 0;padding:16px;border-radius:18px;background:var(--night);color:#EFE6D8;font-size:14.5px;line-height:1.6}
+.dry-line b{color:var(--lime)}
+.rescue{display:grid;gap:8px;margin-top:16px}
+.rescue .phr{background:#fff}
+
+/* ---------- calendar ---------- */
+.cal-wrap{display:grid;gap:16px;margin-top:26px}
+.cal{border-radius:24px;background:#fff;overflow:hidden;box-shadow:0 22px 40px -28px rgba(43,37,32,.7)}
+.cal-h{padding:14px 18px;background:linear-gradient(180deg,#8BD66B,var(--green));color:#fff;font:400 clamp(28px,8vw,40px)/1 var(--hd);text-transform:uppercase;box-shadow:inset 0 2px 0 rgba(255,255,255,.35)}
+.cal-m{display:flex;align-items:center;justify-content:center;gap:16px;padding:12px 0 2px;font:400 30px/1 var(--sc);color:var(--ink)}
+.cal-m svg{color:var(--ink-2)}
+.cal-g{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;padding:8px 12px 16px;text-align:center}
+.cal-g .dn{font-size:11px;color:var(--mute);padding:4px 0}
+.cal-g .d{position:relative;display:grid;place-items:center;aspect-ratio:1;border-radius:50%;font:700 14px/1 var(--tx);color:var(--ink-2);transition:background .25s,color .25s}
+.cal-g .d.in{background:#E2F5D8;color:var(--green-d)}
+.cal-g .d.start{background:var(--orange);color:#fff}
+.cal-g .d.end{background:var(--green);color:#fff;box-shadow:0 0 0 4px rgba(93,187,70,.25)}
+.cal-g .d.late{background:var(--red);color:#fff}
+.cal-g .d.ghost{color:#D3C7B6}
+.cal-legend{display:grid;gap:8px}
+.cal-legend div{display:flex;gap:10px;align-items:center;font-size:13.5px;line-height:1.45}
+.cal-legend i{width:16px;height:16px;border-radius:50%;flex:none}
+.cal-count{font:400 clamp(48px,14vw,90px)/1 var(--hd);color:var(--green)}
+.cal-count small{font:400 18px/1 var(--hd);color:#CFC4B4}
+@media (min-width:900px){.cal-wrap{grid-template-columns:1fr 1fr;align-items:center}}
+
+/* ---------- unlocks ---------- */
+.unl{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:26px}
+.ach{position:relative;border-radius:22px;padding:16px 14px;background:var(--night-2);color:#EFE6D8;overflow:hidden;border:2px solid rgba(255,255,255,.08)}
+.ach .ai{width:50px;height:50px;border-radius:16px;display:grid;place-items:center;background:var(--green);color:#fff;margin-bottom:12px}
+.ach .ai svg{width:26px;height:26px}
+.ach h4{margin:0 0 6px;font:400 20px/1.05 var(--hd);text-transform:uppercase;color:#fff;word-break:break-word}
+.ach p{margin:0;font-size:12.5px;line-height:1.5;color:#CFC4B4}
+.ach .lock{position:absolute;right:12px;top:12px;font:700 10px/1 var(--tx);letter-spacing:.12em;text-transform:uppercase;color:var(--lime)}
+@media (min-width:900px){.unl{grid-template-columns:repeat(4,1fr)}}
+
+/* ---------- quiz ---------- */
+.quiz{position:relative;margin-top:26px;border-radius:26px;background:var(--card);padding:20px 16px;box-shadow:0 18px 36px -28px rgba(43,37,32,.7);overflow:hidden}
+.qbar{display:flex;gap:6px;margin-bottom:14px}
+.qbar i{flex:1;height:8px;border-radius:4px;background:var(--cream-2)}
+.qbar i.cur{background:var(--orange)}
+.qbar i.ok{background:var(--green)}
+.qbar i.bad{background:var(--red)}
+.qn{margin:0;font:700 11px/1 var(--tx);letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.qc{margin:8px 0 0;font-size:13px;color:var(--orange-d);font-weight:700}
+.qq{margin:6px 0 16px;font:700 clamp(19px,5.4vw,26px)/1.35 var(--tx)}
+.qq u{text-decoration:none;display:inline-block;min-width:2.4em;border-bottom:3px solid var(--orange);color:var(--green-d);text-align:center}
+.qo{display:grid;gap:8px}
+.qo button{min-height:52px;border-radius:14px;border:0;background:#fff;box-shadow:inset 0 0 0 2px var(--line);font-weight:700;font-size:16px;text-align:left;padding:0 16px;transition:background .2s,color .2s,box-shadow .2s}
+.qo button:hover:not(:disabled){box-shadow:inset 0 0 0 2px var(--green)}
+.qo button.ok{background:var(--green);color:#fff;box-shadow:none}
+.qo button.bad{background:var(--red);color:#fff;box-shadow:none}
+.qx{display:flex;gap:10px;align-items:flex-start;margin-top:14px;padding:14px;border-radius:16px;background:var(--cream);font-size:14px;line-height:1.5}
+.qx svg{color:var(--green-d);margin-top:2px}
+.qx.bad svg{color:var(--red)}
+.qnext{margin-top:14px;width:100%}
+.qres{text-align:center;padding:10px 0}
+.score{font:400 72px/1 var(--hd);color:var(--green)}
+.cta-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:16px}
+.conf{position:absolute;left:50%;top:40%;width:10px;height:14px;border-radius:2px;pointer-events:none}
+
+/* ---------- cheat ---------- */
+.cheat{display:grid;gap:14px;margin-top:26px}
+.ck{border-radius:24px;background:#fff;padding:20px 18px;box-shadow:0 18px 36px -28px rgba(43,37,32,.7)}
+.ck .sc{font-size:28px}
+.ck ul{list-style:none;margin:10px 0 0;padding:0}
+.ck li{display:flex;gap:10px;align-items:flex-start;margin:0 0 11px;font-size:14px;line-height:1.5}
+.ck li .gem{width:12px;height:19px;margin-top:2px}
+.ck li b{color:var(--green-d)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.chips button{display:inline-flex;align-items:center;gap:8px;border:0;padding:10px 14px;border-radius:14px;background:var(--cream);font-size:13px;font-weight:700;text-align:left}
+.chips button svg{color:var(--green-d)}
+@media (min-width:900px){.cheat{grid-template-columns:1fr 1fr 1fr}}
+
+/* ---------- outro (no ad) ---------- */
+.outro{text-align:center;padding:90px 0}
+
+/* ---------- AD ---------- */
+.plat{padding-top:0}
+.p-hero{position:relative;padding:86px 0 70px;overflow:hidden}
+.p-hero .bg{position:absolute;inset:0;background:linear-gradient(90deg,rgba(31,28,26,.15),rgba(31,28,26,.85) 70%),url(media/learner.webp) 30% center/cover no-repeat}
+.p-hero .wrap{position:relative;z-index:1;display:grid;justify-items:end}
+.p-hero .box{max-width:460px;margin-left:auto}
+.p-hero .px{font-size:clamp(40px,12vw,92px);color:#fff}
+.p-hero p{color:#E9DFD0;font-size:14.5px;line-height:1.6;margin:14px 0 18px}
+.p-hero .chip{margin-bottom:18px}
+@media (max-width:640px){.p-hero{padding:300px 0 70px}.p-hero .bg{background:linear-gradient(180deg,rgba(31,28,26,0) 20%,rgba(31,28,26,.92) 55%),url(media/learner.webp) 28% top/auto 380px no-repeat,var(--night)}}
+.nums{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:26px}
+.nm{border-radius:20px;padding:16px;background:#fff;box-shadow:0 12px 26px -20px rgba(0,0,0,.6)}
+.nm b{display:block;font:400 clamp(36px,10vw,60px)/1 var(--hd);color:var(--green)}
+.nm span{display:block;margin-top:6px;font-size:12.5px;line-height:1.4;color:var(--ink-2)}
+@media (min-width:900px){.nums{grid-template-columns:repeat(4,1fr)}}
+.tale{margin-top:26px;border-radius:24px;padding:22px 18px;background:linear-gradient(180deg,rgba(31,28,26,.88),rgba(31,28,26,.97)),url(media/confused.webp) center/cover;color:#EFE6D8}
+.tale p{margin:0 0 10px;font-size:15px;line-height:1.6}
+.tale p:last-child{margin:14px 0 0;color:var(--lime);font-weight:700}
+.vs{display:grid;gap:14px;margin-top:18px}
+.vs > div{border-radius:24px;padding:20px 18px}
+.vs .now{background:#fff;box-shadow:0 12px 26px -20px rgba(0,0,0,.6)}
+.vs .yes{background:linear-gradient(165deg,var(--green-l),var(--green));color:#fff}
+.vs h4{margin:0 0 12px;font:400 26px/1 var(--hd);text-transform:uppercase}
+.vs .now h4{color:var(--red)}
+.vs ul{list-style:none;margin:0;padding:0}
+.vs li{display:flex;gap:10px;align-items:flex-start;margin:0 0 12px;font-size:14px;line-height:1.5}
+.vs li svg{margin-top:3px}
+.vs .now li svg{color:var(--red)}
+@media (min-width:900px){.vs{grid-template-columns:1fr 1fr}}
+.made{margin-top:40px;border-radius:30px;padding:24px 16px;background:linear-gradient(170deg,#8CD86C,var(--green));color:#fff;box-shadow:inset 0 2px 0 rgba(255,255,255,.35)}
+.made .px{color:#fff;text-align:center;font-size:clamp(30px,9vw,62px)}
+.made .sc{color:#fff;text-align:center}
+.shows{display:grid;gap:22px;margin-top:20px}
+.shw figcaption{margin-top:10px;text-align:center;font:400 28px/1.1 var(--sc)}
+.shw figcaption small{display:block;font:400 13px/1.45 var(--tx);margin-top:4px;opacity:.95}
+.shw{margin:0}
+.browser{border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 20px 40px -24px rgba(0,0,0,.6)}
+.browser .bar{display:flex;align-items:center;gap:6px;padding:8px 10px;background:#EFE9DF}
+.browser .bar i{width:9px;height:9px;border-radius:50%;background:#E0483A}
+.browser .bar i:nth-child(2){background:#F2B33A}.browser .bar i:nth-child(3){background:#5DBB46}
+.browser .bar span{margin-left:8px;font-size:11px;color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.browser img,.browser video{width:100%;height:auto;background:#f4f4f4}
+.phone{width:min(240px,64vw);margin:0 auto;border-radius:36px;padding:9px;background:#1b1917;box-shadow:0 26px 50px -24px rgba(0,0,0,.8)}
+.phone video,.phone img{width:100%;border-radius:28px;aspect-ratio:9/17;object-fit:cover;object-position:top;background:#222}
+@media (min-width:900px){.shows{grid-template-columns:1fr 1fr 1fr;align-items:start}}
+.gal{display:grid;grid-auto-flow:column;grid-auto-columns:150px;gap:12px;overflow-x:auto;padding:8px var(--gut) 20px;margin:18px calc(var(--gut)*-1) 0;scrollbar-width:none;scroll-snap-type:x mandatory}
+.gal::-webkit-scrollbar{display:none}
+.gal figure{margin:0;scroll-snap-align:start}
+.gal .phone{width:150px;border-radius:24px;padding:6px}
+.gal .phone img{border-radius:19px}
+.gal figcaption{margin-top:8px;text-align:center;font-size:12px;font-weight:700}
+.tiers{display:grid;gap:16px;margin-top:26px}
+.tier{position:relative;border-radius:26px;padding:12px 12px 20px;background:#fff;box-shadow:0 22px 40px -28px rgba(0,0,0,.7)}
+.tier.mid{background:#F1FBEA}
+.tier.top{background:linear-gradient(170deg,var(--orange-l),var(--orange));color:#fff}
+.tier .tp{height:120px;border-radius:18px;background:center 22%/cover no-repeat}
+.tier h3{margin:14px 0 8px;text-align:center;font:400 clamp(30px,8.6vw,40px)/1 var(--hd);text-transform:uppercase;color:var(--green)}
+.tier.top h3{color:#fff}
+.tier .acc{display:block;width:max-content;margin:0 auto 14px;padding:8px 14px;border-radius:12px;background:var(--orange);color:#fff;font-size:12px;font-weight:700}
+.tier.top .acc{background:var(--green)}
+.tier ul{list-style:none;margin:0 6px;padding:0}
+.tier li{display:flex;gap:9px;align-items:flex-start;margin:0 0 9px;font-size:13px;line-height:1.45}
+.tier li .gem{width:11px;height:17px;margin-top:2px}
+.tier li.off{opacity:.42;text-decoration:line-through}
+.tier .old{margin:16px 0 0;text-align:center;font:400 26px/1 var(--sc);text-decoration:line-through;opacity:.6}
+.tier .now-l{margin:6px 0 0;text-align:center;font-size:12px;font-weight:700}
+.tier .amt{text-align:center;font:400 clamp(46px,13vw,64px)/1.05 var(--hd);color:var(--green)}
+.tier.top .amt{color:#fff}
+.tier .btn{width:calc(100% - 12px);margin:12px 6px 0}
+.tier .pre{display:block;text-align:center;margin-top:12px}
+.tier .flag{position:absolute;top:-12px;right:16px;padding:7px 12px;border-radius:10px;background:var(--green);color:#fff;font:700 11px/1 var(--tx);letter-spacing:.12em;text-transform:uppercase;box-shadow:0 8px 16px -10px rgba(60,154,44,.9)}
+@media (min-width:900px){.tiers{grid-template-columns:repeat(3,1fr);align-items:start}.tier.top{transform:translateY(-14px)}}
+.revs{display:grid;grid-auto-flow:column;grid-auto-columns:min(78vw,320px);gap:12px;overflow-x:auto;padding:8px var(--gut) 20px;margin:18px calc(var(--gut)*-1) 0;scrollbar-width:none;scroll-snap-type:x mandatory;align-items:start}
+.revs::-webkit-scrollbar{display:none}
+.revs img{width:100%;border-radius:18px;scroll-snap-align:start;box-shadow:0 14px 28px -20px rgba(0,0,0,.7)}
+.fine{margin:18px auto 0;max-width:62ch;text-align:center;font-size:12.5px;line-height:1.6;color:var(--mute)}
+.final{margin-top:60px;border-radius:30px;padding:34px 18px;text-align:center;background:linear-gradient(180deg,rgba(31,28,26,.7),rgba(31,28,26,.95)),url(media/night.webp) center/cover;color:#fff}
+.final .px{color:#fff;font-size:clamp(32px,9.4vw,70px)}
+.final .px .or{color:var(--orange-l)}
+.final p{color:#E9DFD0;max-width:36ch;margin:14px auto 0;font-size:15px;line-height:1.6}
+
+.dock{position:fixed;left:10px;right:10px;bottom:10px;z-index:70;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 8px 8px 16px;border-radius:20px;background:rgba(31,28,26,.95);color:#fff;box-shadow:0 16px 36px -14px rgba(0,0,0,.7);translate:0 140%;transition:translate .4s cubic-bezier(.2,1.2,.4,1)}
+.dock.show{translate:0 0}
+.dock p{margin:0;font-size:12px;line-height:1.3;color:#D8CEC0}
+.dock p b{display:block;font:400 22px/1 var(--hd);color:var(--lime)}
+.dock .btn{min-height:48px;padding:0 16px;font-size:11.5px}
+@media (min-width:900px){.dock{left:auto;right:20px;bottom:20px;width:440px}}
+
+footer{position:relative;z-index:1;padding:28px 0 100px;font-size:12px;color:var(--mute)}
+footer .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+
+/* ---------- reveal fallback ---------- */
+.rv{transition:translate .7s cubic-bezier(.2,.9,.3,1), rotate .7s}
+html.js:not(.gs) .rv:not(.in){translate:0 26px}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition-duration:.01s!important;scroll-behavior:auto!important}
+}
+</style>
+
+</head>
+<body>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E4FFB8"/><stop offset="1" stop-color="#7CD957"/></linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9BE86C"/><stop offset="1" stop-color="#3FA83A"/></linearGradient>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#58C043"/><stop offset="1" stop-color="#2C8A2A"/></linearGradient>
+    <linearGradient id="g4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3A9A31"/><stop offset="1" stop-color="#1B5E1C"/></linearGradient>
+  </defs>
+  <symbol id="gem" viewBox="0 0 40 62">
+    <polygon points="20,0 2,26 20,31" fill="url(#g1)"/>
+    <polygon points="20,0 20,31 38,26" fill="url(#g2)"/>
+    <polygon points="2,26 20,62 20,31" fill="url(#g3)"/>
+    <polygon points="20,31 20,62 38,26" fill="url(#g4)"/>
+    <polygon points="20,3 8,22 14,23" fill="#fff" opacity=".55"/>
+  </symbol>
+  <symbol id="spk" viewBox="0 0 24 24"><path fill="currentColor" d="M3 9v6h4l5 4V5L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></symbol>
+<symbol id="i-calendar" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></symbol>
+<symbol id="i-calendar-check" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></symbol>
+<symbol id="i-calendar-x" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="m14 14-4 4"/><path d="m10 14 4 4"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+<symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="i-house" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+<symbol id="i-key-round" viewBox="0 0 24 24"><path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"/><circle cx="16.5" cy="7.5" r=".5" fill="currentColor"/></symbol>
+<symbol id="i-file-text" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></symbol>
+<symbol id="i-stamp" viewBox="0 0 24 24"><path d="M5 22h14"/><path d="M19.27 13.73A2.5 2.5 0 0 0 17.5 13h-11A2.5 2.5 0 0 0 4 15.5V17a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-1.5c0-.66-.26-1.3-.73-1.77Z"/><path d="M14 13V8.5C14 7 15 7 15 5a3 3 0 0 0-3-3c-1.66 0-3 1-3 3s1 2 1 3.5V13"/></symbol>
+<symbol id="i-landmark" viewBox="0 0 24 24"><line x1="3" x2="21" y1="22" y2="22"/><line x1="6" x2="6" y1="18" y2="11"/><line x1="10" x2="10" y1="18" y2="11"/><line x1="14" x2="14" y1="18" y2="11"/><line x1="18" x2="18" y1="18" y2="11"/><polygon points="12 2 20 7 4 7"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+<symbol id="i-id-card" viewBox="0 0 24 24"><path d="M16 10h2"/><path d="M16 14h2"/><path d="M6.17 15a3 3 0 0 1 5.66 0"/><circle cx="9" cy="11" r="2"/><rect x="2" y="5" width="20" height="14" rx="2"/></symbol>
+<symbol id="i-file-pen-line" viewBox="0 0 24 24"><path d="m18 5-2.414-2.414A2 2 0 0 0 14.172 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2"/><path d="M21.378 12.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"/><path d="M8 18h1"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+<symbol id="i-banknote" viewBox="0 0 24 24"><rect width="20" height="12" x="2" y="6" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></symbol>
+<symbol id="i-triangle-alert" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></symbol>
+<symbol id="i-circle-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></symbol>
+<symbol id="i-circle-x" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></symbol>
+<symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+<symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></symbol>
+<symbol id="i-volume-2" viewBox="0 0 24 24"><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.364 18.364a9 9 0 0 0 0-12.728"/></symbol>
+<symbol id="i-trophy" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol>
+<symbol id="i-repeat" viewBox="0 0 24 24"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></symbol>
+<symbol id="i-brain" viewBox="0 0 24 24"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M19.938 10.5a4 4 0 0 1 .585.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M19.967 17.484A4 4 0 0 1 18 18"/></symbol>
+<symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></symbol>
+<symbol id="i-backpack" viewBox="0 0 24 24"><path d="M4 10a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M8 10h8"/><path d="M8 18h8"/><path d="M8 22v-6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v6"/><path d="M9 6V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></symbol>
+<symbol id="i-gamepad-2" viewBox="0 0 24 24"><line x1="6" x2="10" y1="11" y2="11"/><line x1="8" x2="8" y1="9" y2="13"/><line x1="15" x2="15.01" y1="12" y2="12"/><line x1="18" x2="18.01" y1="10" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/></symbol>
+<symbol id="i-church" viewBox="0 0 24 24"><path d="M10 9h4"/><path d="M12 7v5"/><path d="M14 22v-4a2 2 0 0 0-4 0v4"/><path d="M18 22V5.618a1 1 0 0 0-.553-.894l-4.553-2.277a2 2 0 0 0-1.788 0L6.553 4.724A1 1 0 0 0 6 5.618V22"/><path d="m18 7 3.447 1.724a1 1 0 0 1 .553.894V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9.618a1 1 0 0 1 .553-.894L6 7"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="i-briefcase" viewBox="0 0 24 24"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></symbol>
+<symbol id="i-message-circle" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+<symbol id="i-bot" viewBox="0 0 24 24"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></symbol>
+<symbol id="i-wifi-off" viewBox="0 0 24 24"><path d="M12 20h.01"/><path d="M8.5 16.429a5 5 0 0 1 7 0"/><path d="M5 12.859a10 10 0 0 1 5.17-2.69"/><path d="M19 12.859a10 10 0 0 0-2.007-1.523"/><path d="M2 8.82a15 15 0 0 1 4.177-2.643"/><path d="M22 8.82a15 15 0 0 0-11.288-3.764"/><path d="m2 2 20 20"/></symbol>
+<symbol id="i-graduation-cap" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+<symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></symbol>
+<symbol id="i-layers" viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/></symbol>
+<symbol id="i-coins" viewBox="0 0 24 24"><circle cx="8" cy="8" r="6"/><path d="M18.09 10.37A6 6 0 1 1 10.34 18"/><path d="M7 6h1v4"/><path d="m16.71 13.88.7.71-2.82 2.82"/></symbol>
+<symbol id="i-chart-line" viewBox="0 0 24 24"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="m19 9-5 5-4-4-3 3"/></symbol>
+<symbol id="i-plane" viewBox="0 0 24 24"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></symbol>
+<symbol id="i-truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
+<symbol id="i-hourglass" viewBox="0 0 24 24"><path d="M5 22h14"/><path d="M5 2h14"/><path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22"/><path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+<symbol id="i-smartphone" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></symbol>
+<symbol id="i-zap" viewBox="0 0 24 24"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></symbol>
+<symbol id="i-baby" viewBox="0 0 24 24"><path d="M9 12h.01"/><path d="M15 12h.01"/><path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"/><path d="M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1"/></symbol>
+<symbol id="i-languages" viewBox="0 0 24 24"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></symbol>
+<symbol id="i-list-checks" viewBox="0 0 24 24"><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></symbol>
+<symbol id="i-book-open" viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></symbol>
+<symbol id="i-audio-lines" viewBox="0 0 24 24"><path d="M2 10v3"/><path d="M6 6v11"/><path d="M10 3v18"/><path d="M14 8v7"/><path d="M18 5v13"/><path d="M22 10v3"/></symbol>
+<symbol id="i-flag" viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" x2="4" y1="22" y2="15"/></symbol>
+<symbol id="i-door-open" viewBox="0 0 24 24"><path d="M13 4h3a2 2 0 0 1 2 2v14"/><path d="M2 20h3"/><path d="M13 20h9"/><path d="M10 12v.01"/><path d="M13 4.562v16.157a1 1 0 0 1-1.242.97L5 20V5.562a2 2 0 0 1 1.515-1.94l4-1A2 2 0 0 1 13 4.561Z"/></symbol>
+<symbol id="i-scroll-text" viewBox="0 0 24 24"><path d="M15 12h-5"/><path d="M15 8h-5"/><path d="M19 17V5a2 2 0 0 0-2-2H4"/><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"/></symbol>
+<symbol id="i-building-2" viewBox="0 0 24 24"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></symbol>
+<symbol id="i-ticket" viewBox="0 0 24 24"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></symbol>
+<symbol id="i-timer" viewBox="0 0 24 24"><line x1="10" x2="14" y1="2" y2="2"/><line x1="12" x2="15" y1="14" y2="11"/><circle cx="12" cy="14" r="8"/></symbol>
+<symbol id="i-shield-alert" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="M12 8v4"/><path d="M12 16h.01"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></symbol>
+<symbol id="i-hand" viewBox="0 0 24 24"><path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2"/><path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2"/><path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="i-gem" viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></symbol>
+<symbol id="i-map" viewBox="0 0 24 24"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/></symbol>
+<symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+<symbol id="i-clapperboard" viewBox="0 0 24 24"><path d="M20.2 6 3 11l-.9-2.4c-.3-1.1.3-2.2 1.3-2.5l13.5-4c1.1-.3 2.2.3 2.5 1.3Z"/><path d="m6.2 5.3 3.1 3.9"/><path d="m12.4 3.4 3.1 4"/><path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></symbol>
+<symbol id="i-stethoscope" viewBox="0 0 24 24"><path d="M11 2v2"/><path d="M5 2v2"/><path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1"/><path d="M8 15a6 6 0 0 0 12 0v-3"/><circle cx="20" cy="10" r="2"/></symbol>
+<symbol id="i-wallet" viewBox="0 0 24 24"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></symbol>
+<symbol id="i-party-popper" viewBox="0 0 24 24"><path d="M5.8 11.3 2 22l10.7-3.79"/><path d="M4 3h.01"/><path d="M22 8h.01"/><path d="M15 2h.01"/><path d="M22 20h.01"/><path d="m22 2-2.24.75a2.9 2.9 0 0 0-1.96 3.12c.1.86-.57 1.63-1.45 1.63h-.38c-.86 0-1.6.6-1.76 1.44L14 10"/><path d="m22 13-.82-.33c-.86-.34-1.82.2-1.98 1.11c-.11.7-.72 1.22-1.43 1.22H17"/><path d="m11 2 .33.82c.34.86-.2 1.82-1.11 1.98C9.52 4.9 9 5.52 9 6.23V7"/><path d="M11 13c1.93 1.93 2.83 4.17 2 5-.83.83-3.07-.07-5-2-1.93-1.93-2.83-4.17-2-5 .83-.83 3.07.07 5 2Z"/></symbol>
+<symbol id="i-footprints" viewBox="0 0 24 24"><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z"/><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z"/><path d="M16 17h4"/><path d="M4 13h4"/></symbol>
+<symbol id="i-ear" viewBox="0 0 24 24"><path d="M6 8.5a6.5 6.5 0 1 1 13 0c0 6-6 6-6 10a3.5 3.5 0 1 1-7 0"/><path d="M15 8.5a2.5 2.5 0 0 0-5 0v1a2 2 0 1 1 0 4"/></symbol>
+
+</svg>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="media/logo.webp" alt="" width="30" height="30"><b>stellas</b></a>
+    <div class="tb-right">
+      <span class="lvl" title="Прогресс квеста"><svg class="gem"><use href="#gem"/></svg><b id="lvlNum">0%</b></span>
+      <a class="btn sm" href="#platform">30 €</a>
+      
+    </div>
+  </div>
+  <div class="prog" id="prog"></div>
+</header>
+
+<main id="top" lang="ru">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="h-title">
+      <p class="sc">Квест для тех, кто переехал в Германию</p>
+      <h1 class="px">Anmel<span class="or">dung</span></h1>
+    </div>
+    <div class="hero-grid">
+      <div class="h-card">
+        <img src="media/hero.webp" alt="Парень с чемоданом и папкой документов на фоне немецкого города" width="1100" height="619" fetchpriority="high">
+        <div class="h-badges">
+          <div class="h-badge"><i><svg class="ic"><use href="#i-calendar"/></svg></i><div><b>14 дней</b><small>срок с переезда</small></div></div>
+          <div class="h-badge"><i><svg class="ic"><use href="#i-clock"/></svg></i><div><b>10 мин</b><small>разговор в Amt</small></div></div>
+        </div>
+        <svg class="gem big h-gem float" aria-hidden="true"><use href="#gem"/></svg>
+        <div class="h-body">
+          <p>Прописка по-немецки. Что принести, что сказать, где все спотыкаются. Без таблиц. С картой, персонажами и одной бумажкой, из-за которой разворачивают половину людей.</p>
+          <a class="btn" href="#story"><svg class="ic"><use href="#i-play"/></svg>Начать квест</a>
+        </div>
+      </div>
+      <div>
+        <div class="prog-card">
+          <div>
+            <h3>Ваш прогресс</h3>
+            <p>Кристалл заполняется, пока листаешь. Дойдёшь до конца, будешь готов к Bürgeramt.</p>
+          </div>
+          <div class="pc-gem"><svg class="gem spin3d"><use href="#gem"/></svg><b id="pcNum">0%</b></div>
+        </div>
+        <div class="h-side">
+          <a class="side-btn" href="#bag"><svg class="ic"><use href="#i-backpack"/></svg>Инвентарь</a>
+          <a class="side-btn" href="#dialog"><svg class="ic"><use href="#i-message-circle"/></svg>Диалог в Amt</a>
+          <a class="side-btn" href="#cheat"><svg class="ic"><use href="#i-gem"/></svg>Чит-код</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="band" aria-hidden="true"><div class="track" id="mq1">
+  <span>Anmeldung <svg class="gem"><use href="#gem"/></svg> Termin <svg class="gem"><use href="#gem"/></svg> Bürgeramt <svg class="gem"><use href="#gem"/></svg> Stempel <svg class="gem"><use href="#gem"/></svg> Meldebescheinigung <svg class="gem"><use href="#gem"/></svg></span>
+  <span>Anmeldung <svg class="gem"><use href="#gem"/></svg> Termin <svg class="gem"><use href="#gem"/></svg> Bürgeramt <svg class="gem"><use href="#gem"/></svg> Stempel <svg class="gem"><use href="#gem"/></svg> Meldebescheinigung <svg class="gem"><use href="#gem"/></svg></span>
+</div></div>
+
+<!-- STORY -->
+<section class="story" id="story">
+  <div class="wrap">
+    <p class="sc or">История, которую мне рассказал друг</p>
+    <h2 class="px split">Mietvertrag <span class="ink">не</span> <span class="or">считается</span></h2>
+    <div class="feed">
+      <article class="st dk">
+        <span class="num">01/04</span>
+        <p class="sc wt">Начало</p>
+        <h3>Квартира есть</h3>
+        <p>Тимур переехал в Берлин. В Берлине нашёл квартиру. В квартире нашёл кровать. На кровати нашёл письмо от Vermieter.</p>
+        <p>В письме было слово <span class="de">anmelden</span>. И цифра 14.</p>
+        <div class="pic" style="background-image:url(media/loc-home.webp)"></div>
+      </article>
+      <article class="st cr">
+        <span class="num">02/04</span>
+        <p class="sc">Termin</p>
+        <h3>Три недели</h3>
+        <p>Свободный Termin нашёлся через три недели. Тимур пришёл за сорок минут. Сел. Смотрит на табло.</p>
+        <p>Номер загорается. Тимур заходит. За столом женщина. Очки на кончике носа. Штамп в руке.</p>
+        <div class="pic" style="background-image:url(media/beamtin.webp)"></div>
+      </article>
+      <article class="st og">
+        <span class="num">03/04</span>
+        <p class="sc wt">Разговор</p>
+        <h3>Ещё раз</h3>
+        <p>Говорит, Guten Tag, ich möchte mich anmelden. Она говорит, <span class="de">Wohnungsgeberbestätigung?</span></p>
+        <p>Тимур протягивает Mietvertrag. Она говорит, Wohnungsgeberbestätigung. Тимур протягивает Mietvertrag ещё раз. Медленнее. Как будто дело было в скорости.</p>
+        <p class="dry">Она говорит, nein. Штамп так и остался у неё в руке.</p>
+      </article>
+      <article class="st dk">
+        <span class="num">04/04</span>
+        <p class="sc wt">Финал</p>
+        <h3>Новый Termin</h3>
+        <p>Новый Termin дали через девятнадцать дней. Срок был четырнадцать.</p>
+        <p>Штраф ему так и не пришёл. Зато пришло понимание. <span class="de">Mietvertrag</span> и <span class="de">Wohnungsgeberbestätigung</span> это две разные бумажки.</p>
+        <p class="dry">Табло, кстати, было красивое. Красное.</p>
+      </article>
+    </div>
+    <p class="swipe"><svg class="ic"><use href="#i-hand"/></svg>Листай вбок</p>
+  </div>
+</section>
+
+<!-- MAP -->
+<section id="map">
+  <div class="wrap">
+    <p class="eyebrow"><svg class="ic"><use href="#i-map"/></svg>Карта квеста · 4 локации</p>
+    <h2 class="px split">Маршрут <span class="or">прописки</span></h2>
+    <p class="lede">Порядок важен. Нельзя прийти в Amt раньше, чем сходишь к Vermieter. Тимур проверил.</p>
+    <div style="margin-top:20px"><span class="hint"><svg class="ic"><use href="#i-hand"/></svg>Нажимай на локации, чтобы увидеть детали</span></div>
+    <div class="map" id="mapBox">
+      <svg class="path" aria-hidden="true" preserveAspectRatio="none"><path id="mapPath" d=""/></svg>
+      <button class="loc" type="button" data-loc="0">
+        <span class="isl"><img src="media/loc-camp.webp" alt="Палатка с чемоданами: только приехал" loading="lazy"><span class="pin"><b>0</b></span></span>
+        <span><h4>Локация 0: Прибытие</h4><p>Ты в Германии. Чемодан есть, адреса нет.</p><span class="more">Подробнее <svg class="ic"><use href="#i-chevron-right"/></svg></span></span>
+      </button>
+      <button class="loc rev" type="button" data-loc="1">
+        <span class="isl"><img src="media/loc-home.webp" alt="Жилой дом в Германии" loading="lazy"><span class="pin"><b>1</b></span></span>
+        <span><h4>Локация 1: Квартира</h4><p>Въехал. Таймер 14 дней пошёл. Забираешь бумажку у Vermieter.</p><span class="more">Подробнее <svg class="ic"><use href="#i-chevron-right"/></svg></span></span>
+      </button>
+      <button class="loc" type="button" data-loc="2">
+        <span class="isl"><img src="media/loc-amt.webp" alt="Здание Bürgeramt" loading="lazy"><span class="pin"><b>2</b></span></span>
+        <span><h4>Локация 2: Bürgeramt</h4><p>Termin, паспорт, анкета. Десять минут разговора.</p><span class="more">Подробнее <svg class="ic"><use href="#i-chevron-right"/></svg></span></span>
+      </button>
+      <button class="loc rev" type="button" data-loc="3">
+        <span class="isl"><img src="media/loc-bank.webp" alt="Банк и почта" loading="lazy"><span class="pin"><b>3</b></span></span>
+        <span><h4>Локация 3: Награда</h4><p>Meldebescheinigung открывает банк, работу и Steuer-ID.</p><span class="more">Подробнее <svg class="ic"><use href="#i-chevron-right"/></svg></span></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<div class="pop" id="pop" role="dialog" aria-modal="true" aria-labelledby="popT">
+  <div class="pop-card">
+    <button class="pop-x" type="button" id="popX" aria-label="Закрыть"><svg class="ic"><use href="#i-x"/></svg></button>
+    <img id="popI" src="media/loc-camp.webp" alt="">
+    <p class="sc or" id="popS"></p>
+    <h3 id="popT"></h3>
+    <ul id="popL"></ul>
+  </div>
+</div>
+
+<!-- WHAT -->
+<section id="what">
+  <div class="wrap">
+    <p class="eyebrow"><svg class="ic"><use href="#i-sparkles"/></svg>Суть за 10 секунд</p>
+    <h2 class="px split">Государство <span class="or">узнаёт,</span> где ты <span class="ink">спишь</span></h2>
+    <p class="lede">Вот и вся Anmeldung. Ты говоришь городу свой адрес. Город ставит штамп. Без этого ты в Германии как персонаж Sims без дома. Вроде есть. А играть нельзя.</p>
+    <div class="what-scene rv" id="ws">
+      <div class="ws-row">
+        <div class="ws-node"><div class="ws-ic" id="wsA"><svg class="ic"><use href="#i-house"/></svg></div><b>Твой адрес</b><small>die Wohnung</small></div>
+        <div class="ws-arrow"></div>
+        <div class="ws-node"><div class="ws-ic" id="wsB"><svg class="ic"><use href="#i-landmark"/></svg><span class="ws-stamp" id="wsS">OK</span></div><b>Город</b><small>das Bürgeramt</small></div>
+      </div>
+      <div class="ws-doc" id="wsD" aria-hidden="true"><svg class="ic"><use href="#i-file-text"/></svg></div>
+      <p class="ws-cap" id="wsC">Адрес летит в систему. Обратно прилетает штамп.</p>
+    </div>
+    <div class="facts">
+      <div class="fact rv"><b class="count" data-to="14">14</b><span>дней с даты въезда</span></div>
+      <div class="fact rv"><b>0 €</b><span>стоит сама Anmeldung</span></div>
+      <div class="fact rv"><b>1000</b><span>€ максимум штрафа по закону</span></div>
+    </div>
+    <div class="aside rv"><svg class="ic"><use href="#i-flag"/></svg><span>Живёшь в Австрии? Там это называется <b>Meldezettel</b>, и срок вообще 3 дня. Логика та же, бумажки другие.</span></div>
+  </div>
+</section>
+
+<!-- QUEST STEPS -->
+<section class="dark torn" id="steps">
+  <div class="night-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--lime)"><svg class="ic"><use href="#i-gamepad-2"/></svg>Пять уровней</p>
+    <h2 class="px split" style="color:#fff">Проходим <span class="or">квест</span></h2>
+    <p class="lede">Уровни переключаются сами. Можно жать на кружки.</p>
+    <div class="quest" id="quest">
+      <div class="q-track">
+        <div class="q-fill" id="qFill"></div>
+        <button class="q-dot" type="button" data-s="0"><i><svg class="ic"><use href="#i-key-round"/></svg></i><span>Einzug</span></button>
+        <button class="q-dot" type="button" data-s="1"><i><svg class="ic"><use href="#i-file-pen-line"/></svg></i><span>Бумажка</span></button>
+        <button class="q-dot" type="button" data-s="2"><i><svg class="ic"><use href="#i-calendar"/></svg></i><span>Termin</span></button>
+        <button class="q-dot" type="button" data-s="3"><i><svg class="ic"><use href="#i-stamp"/></svg></i><span>Amt</span></button>
+        <button class="q-dot" type="button" data-s="4"><i><svg class="ic"><use href="#i-trophy"/></svg></i><span>Финиш</span></button>
+      </div>
+      <div class="q-stage">
+        <div class="q-slide on">
+          <div class="qi" style="background-image:url(media/loc-home.webp)"></div>
+          <div class="qt"><span class="lv">Уровень 1</span><h3>Der Einzug</h3>
+            <p>Въехал в квартиру. В этот день включается таймер: <b>14 дней</b>. Считают от въезда, не от подписания договора.</p>
+            <div class="phr"><button class="say" type="button" data-say="Ich bin am ersten März eingezogen." aria-label="Озвучить"><svg><use href="#spk"/></svg></button><div><b>Ich bin am 1. März eingezogen.</b><small>Я въехал 1 марта.</small></div></div></div>
+        </div>
+        <div class="q-slide">
+          <div class="qi" style="background-image:url(media/vermieter.webp);background-position:center 20%"></div>
+          <div class="qt"><span class="lv">Уровень 2</span><h3>Wohnungsgeber&shy;bestätigung</h3>
+            <p>Отдельный лист от арендодателя: «да, этот человек тут живёт». Не договор аренды. Без этого листа Amt дальше не пустит.</p>
+            <div class="phr"><button class="say" type="button" data-say="Können Sie mir bitte die Wohnungsgeberbestätigung ausfüllen?" aria-label="Озвучить"><svg><use href="#spk"/></svg></button><div><b>Können Sie mir bitte die Wohnungsgeberbestätigung ausfüllen?</b><small>Заполните мне, пожалуйста, подтверждение от арендодателя.</small></div></div></div>
+        </div>
+        <div class="q-slide">
+          <div class="qi" style="background-image:url(media/night.webp)"></div>
+          <div class="qt"><span class="lv">Уровень 3</span><h3>Der Termin</h3>
+            <p>Запись бронируешь на сайте своего города. В больших городах слоты улетают быстро. Новые часто появляются утром. Проверяй каждый день.</p>
+            <div class="phr"><button class="say" type="button" data-say="Ich brauche einen Termin für die Anmeldung." aria-label="Озвучить"><svg><use href="#spk"/></svg></button><div><b>Ich brauche einen Termin für die Anmeldung.</b><small>Мне нужна запись на прописку.</small></div></div></div>
+        </div>
+        <div class="q-slide">
+          <div class="qi" style="background-image:url(media/beamtin.webp);background-position:center 30%"></div>
+          <div class="qt"><span class="lv">Уровень 4</span><h3>Das Bürgeramt</h3>
+            <p>Паспорт, бумажка от Vermieter, анкета. Пара вопросов, подпись. Обычно всё занимает минут десять.</p>
+            <div class="phr"><button class="say" type="button" data-say="Guten Tag, ich möchte mich anmelden." aria-label="Озвучить"><svg><use href="#spk"/></svg></button><div><b>Guten Tag, ich möchte mich anmelden.</b><small>Добрый день, я хочу прописаться.</small></div></div></div>
+        </div>
+        <div class="q-slide">
+          <div class="qi" style="background-image:url(media/loc-bank.webp)"></div>
+          <div class="qt"><span class="lv">Уровень 5</span><h3>Melde&shy;bescheinigung</h3>
+            <p>Лист со штампом. Твой главный трофей. Сфоткай и положи оригинал в папку. Steuer-ID придёт сама, письмом, примерно через 2–4 недели.</p>
+            <div class="phr"><button class="say" type="button" data-say="Das ist Ihre Meldebescheinigung." aria-label="Озвучить"><svg><use href="#spk"/></svg></button><div><b>Das ist Ihre Meldebescheinigung.</b><small>Это ваша справка о прописке.</small></div></div></div>
+        </div>
+      </div>
+      <div class="q-ctrl">
+        <button class="btn ghost sm" type="button" id="qPrev" style="color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.5)">Назад</button>
+        <button class="btn sm" type="button" id="qNext">Дальше</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAST -->
+<section id="cast">
+  <div class="wrap">
+    <p class="eyebrow"><svg class="ic"><use href="#i-users"/></svg>Персонажи</p>
+    <h2 class="px split">Кто <span class="or">встретится</span> по пути</h2>
+    <p class="lede">У каждого своя фраза. Нажми на динамик, послушай, как звучит.</p>
+    <div class="cast">
+      <div class="who rv">
+        <div class="ph"><img src="media/vermieter.webp" alt="Арендодатель с ключами" loading="lazy" style="object-position:42% center"><span class="rib">Vermieter</span></div>
+        <p>Даёт главную бумажку. Без него квест не начинается.</p>
+        <div class="phr"><button class="say" type="button" data-say="Ich unterschreibe Ihnen das gleich." aria-label="Озвучить"><svg><use href="#spk"/></svg></button><div><b>Ich unterschreibe Ihnen das gleich.</b><small>Сейчас подпишу.</small></div></div>
+      </div>
+      <div class="who rv">
+        <div class="ph"><img src="media/beamtin.webp" alt="Сотрудница Bürgeramt со штампом" loading="lazy" style="object-position:40% center"><span class="rib">Sachbearbeiterin</span></div>
+        <p>Не злая. Просто за день видит сотый Mietvertrag вместо нужного листа.</p>
+        <div class="phr"><button class="say" type="button" data-say="Haben Sie die Wohnungsgeberbestätigung dabei?" aria-label="Озвучить"><svg><use href="#spk"/></svg></button><div><b>Haben Sie die Wohnungsgeberbestätigung dabei?</b><small>Подтверждение от арендодателя с собой?</small></div></div>
+      </div>
+      <div class="who rv">
+        <div class="ph"><img src="media/hero.webp" alt="Ты с папкой документов" loading="lazy" style="object-position:48% center"><span class="rib">Ты</span></div>
+        <p>Приходишь вовремя. С папкой. Первую фразу говоришь сам.</p>
+        <div class="phr"><button class="say" type="button" data-say="Guten Tag, ich habe einen Termin um zehn Uhr." aria-label="Озвучить"><svg><use href="#spk"/></svg></button><div><b>Ich habe einen Termin um zehn Uhr.</b><small>У меня запись на десять.</small></div></div>
+      </div>
+      <div class="who rv">
+        <div class="ph"><img src="media/confused.webp" alt="Растерянная девушка с горой бумаг" loading="lazy" style="object-position:40% center"><span class="rib">Новичок</span></div>
+        <p>Принёс всё, кроме нужного. Ушёл с новым Termin.</p>
+        <div class="phr"><button class="say" type="button" data-say="Reicht der Mietvertrag nicht?" aria-label="Озвучить"><svg><use href="#spk"/></svg></button><div><b>Reicht der Mietvertrag nicht?</b><small>А договора аренды не хватит? (Нет.)</small></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INVENTORY -->
+<section id="bag">
+  <div class="wrap">
+    <p class="eyebrow"><svg class="ic"><use href="#i-backpack"/></svg>Инвентарь</p>
+    <h2 class="px split">Собери <span class="or">рюкзак</span></h2>
+    <p class="lede">Шесть предметов. Нужны три. Жми на то, что берёшь в Amt.</p>
+    <div class="inv">
+      <div>
+        <div class="bag" id="bagBox">
+          <div class="bico" id="bagIco"><svg class="ic"><use href="#i-backpack"/></svg><b id="bagN">0/3</b></div>
+          <div><h4 id="bagT">Рюкзак пуст</h4><p id="bagP">Собери три нужных предмета, и уровень открыт.</p></div>
+        </div>
+        <div class="inv-msg" id="invMsg" style="margin-top:12px"><svg class="ic"><use href="#i-sparkles"/></svg><span>Подсказка: одна из бумажек выглядит как нужная. Но это ловушка.</span></div>
+      </div>
+      <div class="slots" id="slots">
+        <button class="slot" type="button" data-ok="1" data-m="Паспорт. Граждане ЕС могут с ID-картой. Если есть виза или вид на жительство, их тоже бери."><span class="si"><svg class="ic"><use href="#i-id-card"/></svg></span><b>Reisepass</b><small>паспорт</small></button>
+        <button class="slot" type="button" data-ok="0" data-m="Ловушка. Договор аренды не заменяет подтверждение от арендодателя. Именно на этом и развернули Тимура."><span class="si"><svg class="ic"><use href="#i-scroll-text"/></svg></span><b>Mietvertrag</b><small>договор аренды</small></button>
+        <button class="slot" type="button" data-ok="1" data-m="Главный предмет. Лист, который заполняет и подписывает Vermieter. Шаблон есть на сайте твоего города."><span class="si"><svg class="ic"><use href="#i-file-pen-line"/></svg></span><b>Wohnungs&shy;geber&shy;bestätigung</b><small>подтверждение арендодателя</small></button>
+        <button class="slot" type="button" data-ok="0" data-m="Не нужен. Работа на прописку не влияет. Наоборот, многие работодатели сами ждут от тебя Meldebescheinigung."><span class="si"><svg class="ic"><use href="#i-briefcase"/></svg></span><b>Arbeits&shy;vertrag</b><small>трудовой договор</small></button>
+        <button class="slot" type="button" data-ok="1" data-m="Анкета. Скачиваешь на сайте города и заполняешь заранее. В некоторых городах заполняют прямо на месте, но с готовой быстрее."><span class="si"><svg class="ic"><use href="#i-file-text"/></svg></span><b>Anmelde&shy;formular</b><small>анкета</small></button>
+        <button class="slot" type="button" data-ok="0" data-m="Мимо. Банковскую выписку не просят. Счёт в банке ты как раз откроешь после прописки."><span class="si"><svg class="ic"><use href="#i-banknote"/></svg></span><b>Konto&shy;auszug</b><small>выписка из банка</small></button>
+      </div>
+    </div>
+    <p class="lede" style="font-size:14px">Едешь с семьёй? Добавь <b>Heiratsurkunde</b> (свидетельство о браке) и <b>Geburtsurkunde</b> детей. Иностранные документы иногда просят с переводом.</p>
+  </div>
+</section>
+
+<div class="band or" aria-hidden="true"><div class="track" id="mq2">
+  <span>an <svg class="gem"><use href="#gem"/></svg> ab <svg class="gem"><use href="#gem"/></svg> um <svg class="gem"><use href="#gem"/></svg> melden <svg class="gem"><use href="#gem"/></svg> ich melde mich an <svg class="gem"><use href="#gem"/></svg></span>
+  <span>an <svg class="gem"><use href="#gem"/></svg> ab <svg class="gem"><use href="#gem"/></svg> um <svg class="gem"><use href="#gem"/></svg> melden <svg class="gem"><use href="#gem"/></svg> ich melde mich an <svg class="gem"><use href="#gem"/></svg></span>
+</div></div>
+
+<!-- MELDEN -->
+<section id="melden">
+  <div class="wrap">
+    <p class="eyebrow"><svg class="ic"><use href="#i-languages"/></svg>Грамматика внутри квеста</p>
+    <h2 class="px split">Один корень. <span class="or">Три жизни.</span></h2>
+    <p class="lede">Корень <b>melden</b> значит «сообщать». Меняешь приставку, меняется событие в жизни. Как моды в игре.</p>
+    <div class="mach rv" id="mach">
+      <div class="pfx" role="tablist">
+        <button type="button" class="on" data-p="an">an</button>
+        <button type="button" data-p="um">um</button>
+        <button type="button" data-p="ab">ab</button>
+      </div>
+      <div class="word" aria-live="polite"><span class="p" id="mP">an</span><span class="r">melden</span></div>
+      <div class="mean">
+        <p class="sc or" id="mS">въехал → прописался</p>
+        <p id="mT">Первый адрес в Германии. Это наш квест.</p>
+        <div class="phr"><button class="say" type="button" id="mSay" data-say="Ich melde mich an." aria-label="Озвучить"><svg><use href="#spk"/></svg></button><div><b id="mDe">Ich melde mich an.</b><small id="mRu">Я прописываюсь.</small></div></div>
+      </div>
+      <div class="life">
+        <div class="on" data-p="an"><svg class="ic"><use href="#i-plane"/></svg>Приехал в Германию</div>
+        <div data-p="um"><svg class="ic"><use href="#i-truck"/></svg>Переехал внутри страны</div>
+        <div data-p="ab"><svg class="ic"><use href="#i-door-open"/></svg>Уезжаешь насовсем</div>
+      </div>
+    </div>
+
+    <div class="flight" id="flight">
+      <p class="fl-step" id="flStep">Шаг 1 · Инфинитив</p>
+      <div class="fl-line" id="flLine" aria-live="polite"></div>
+      <p class="fl-cap" id="flCap"></p>
+      <div class="fl-ctrl" id="flDots"><i class="on"></i><i></i><i></i><i></i></div>
+    </div>
+    <p class="lede" style="font-size:14px">Приставка в немецком любит конец предложения. В Perfekt между приставкой и корнем влезает <b>ge</b>. С <b>ummelden</b> и <b>abmelden</b> то же самое: <span class="de">ich habe mich umgemeldet</span>.</p>
+  </div>
+</section>
+
+<!-- FORM -->
+<section id="form">
+  <div class="wrap">
+    <p class="eyebrow"><svg class="ic"><use href="#i-file-text"/></svg>Анкета · Anmeldeformular</p>
+    <h2 class="px split">Заполняем <span class="or">вместе</span></h2>
+    <p class="lede">Поля заполняются сами, как только долистаешь. Одно поле стоит денег. Каждый месяц. Найди его.</p>
+    <div class="form rv" id="formBox">
+      <div class="form-h"><b>Anmeldung</b><small>bei der Meldebehörde</small></div>
+      <div class="fld"><span class="lb">Familienname <em>фамилия</em></span><span class="val" data-v="SULTANOV"></span></div>
+      <div class="fld"><span class="lb">Vorname <em>имя</em></span><span class="val" data-v="Timur"></span></div>
+      <div class="fld"><span class="lb">Geburtsdatum / Geburtsort <em>дата и место рождения</em></span><span class="val" data-v="12.05.1998, Almaty"></span></div>
+      <div class="fld"><span class="lb">Staatsangehörigkeit <em>гражданство</em></span><span class="val" data-v="kasachisch"></span></div>
+      <div class="fld"><span class="lb">Tag des Einzugs <em>дата въезда</em></span><span class="val" data-v="01.03.2026"></span></div>
+      <div class="fld"><span class="lb">Neue Wohnung <em>новый адрес</em></span><span class="val" data-v="Lindenstraße 12, 10969 Berlin"></span></div>
+      <div class="fld"><span class="lb">Haupt- oder Nebenwohnung <em>основное или второе жильё</em></span><span class="val" data-v="Hauptwohnung"></span></div>
+      <div class="fld"><span class="lb">Familienstand <em>семейное положение</em></span>
+        <div class="opts" id="famOpts"><button type="button" class="on">ledig</button><button type="button">verheiratet</button><button type="button">geschieden</button><button type="button">verwitwet</button></div>
+      </div>
+      <div class="fld trap"><span class="lb">Religionszugehörigkeit <em>религия · ловушка</em></span>
+        <div class="opts" id="relOpts"><button type="button" data-r="1">römisch-katholisch</button><button type="button" data-r="1">evangelisch</button><button type="button" data-r="0">keine</button></div>
+        <div class="trapmsg" id="relMsg"></div>
+      </div>
+    </div>
+    <div class="aside rv"><svg class="ic"><use href="#i-church"/></svg><span>Отметил католическую или евангелическую церковь, и Finanzamt начнёт удерживать <b>Kirchensteuer</b>: 8–9% от твоего подоходного налога. Если ты не член церкви, ставь <b>keine</b>.</span></div>
+  </div>
+</section>
+
+<!-- DIALOG -->
+<section id="dialog">
+  <div class="wrap">
+    <p class="eyebrow"><svg class="ic"><use href="#i-message-circle"/></svg>Bürgeramt · кабинет 4</p>
+    <h2 class="px split">Диалог <span class="or">целиком</span></h2>
+    <p class="lede">Так звучит нормальная Anmeldung. Каждую реплику можно послушать.</p>
+    <div class="chat" id="chat">
+      <div class="msg"><span class="av" style="background-image:url(media/beamtin.webp);background-position:44% 22%;background-size:300%"></span><div class="bub"><span class="who-n">Sachbearbeiterin</span><b>Guten Tag. Was kann ich für Sie tun?</b><small>Добрый день. Чем могу помочь?</small><button class="say" type="button" data-say="Guten Tag. Was kann ich für Sie tun?" aria-label="Озвучить"><svg><use href="#spk"/></svg></button></div></div>
+      <div class="msg me"><span class="av" style="background-image:url(media/hero.webp);background-position:52% 18%;background-size:300%"></span><div class="bub"><span class="who-n">Ты</span><b>Guten Tag. Ich möchte mich anmelden. Ich habe einen Termin um zehn.</b><small>Хочу прописаться. У меня запись на десять.</small><button class="say" type="button" data-say="Guten Tag. Ich möchte mich anmelden. Ich habe einen Termin um zehn." aria-label="Озвучить"><svg><use href="#spk"/></svg></button></div></div>
+      <div class="msg"><span class="av" style="background-image:url(media/beamtin.webp);background-position:44% 22%;background-size:300%"></span><div class="bub"><span class="who-n">Sachbearbeiterin</span><b>Ihren Pass und die Wohnungsgeberbestätigung, bitte.</b><small>Ваш паспорт и подтверждение от арендодателя, пожалуйста.</small><button class="say" type="button" data-say="Ihren Pass und die Wohnungsgeberbestätigung, bitte." aria-label="Озвучить"><svg><use href="#spk"/></svg></button></div></div>
+      <div class="msg me"><span class="av" style="background-image:url(media/hero.webp);background-position:52% 18%;background-size:300%"></span><div class="bub"><span class="who-n">Ты</span><b>Hier, bitte.</b><small>Вот, пожалуйста. (Именно этот лист. Не договор.)</small><button class="say" type="button" data-say="Hier, bitte." aria-label="Озвучить"><svg><use href="#spk"/></svg></button></div></div>
+      <div class="msg"><span class="av" style="background-image:url(media/beamtin.webp);background-position:44% 22%;background-size:300%"></span><div class="bub"><span class="who-n">Sachbearbeiterin</span><b>Wann sind Sie eingezogen?</b><small>Когда вы въехали?</small><button class="say" type="button" data-say="Wann sind Sie eingezogen?" aria-label="Озвучить"><svg><use href="#spk"/></svg></button></div></div>
+      <div class="msg me"><span class="av" style="background-image:url(media/hero.webp);background-position:52% 18%;background-size:300%"></span><div class="bub"><span class="who-n">Ты</span><b>Am ersten März.</b><small>Первого марта.</small><button class="say" type="button" data-say="Am ersten März." aria-label="Озвучить"><svg><use href="#spk"/></svg></button></div></div>
+      <div class="msg"><span class="av" style="background-image:url(media/beamtin.webp);background-position:44% 22%;background-size:300%"></span><div class="bub"><span class="who-n">Sachbearbeiterin</span><b>Sind Sie verheiratet? Gehören Sie einer Religionsgemeinschaft an?</b><small>Вы женаты? Состоите в религиозной общине?</small><button class="say" type="button" data-say="Sind Sie verheiratet? Gehören Sie einer Religionsgemeinschaft an?" aria-label="Озвучить"><svg><use href="#spk"/></svg></button></div></div>
+      <div class="msg me"><span class="av" style="background-image:url(media/hero.webp);background-position:52% 18%;background-size:300%"></span><div class="bub"><span class="who-n">Ты</span><b>Nein, ich bin ledig. Und nein, keine.</b><small>Нет, холост. И нет, ни в какой.</small><button class="say" type="button" data-say="Nein, ich bin ledig. Und nein, keine." aria-label="Озвучить"><svg><use href="#spk"/></svg></button></div></div>
+      <div class="msg"><span class="av" style="background-image:url(media/beamtin.webp);background-position:44% 22%;background-size:300%"></span><div class="bub"><span class="who-n">Sachbearbeiterin</span><b>Unterschreiben Sie bitte hier. So, das ist Ihre Meldebescheinigung.</b><small>Подпишите здесь. Вот ваша справка о прописке.</small><button class="say" type="button" data-say="Unterschreiben Sie bitte hier. So, das ist Ihre Meldebescheinigung." aria-label="Озвучить"><svg><use href="#spk"/></svg></button></div></div>
+      <div class="msg me"><span class="av" style="background-image:url(media/hero.webp);background-position:52% 18%;background-size:300%"></span><div class="bub"><span class="who-n">Ты</span><b>Vielen Dank! Wann bekomme ich meine Steuer-ID?</b><small>Спасибо! Когда я получу налоговый номер?</small><button class="say" type="button" data-say="Vielen Dank! Wann bekomme ich meine Steuer-ID?" aria-label="Озвучить"><svg><use href="#spk"/></svg></button></div></div>
+      <div class="msg"><span class="av" style="background-image:url(media/beamtin.webp);background-position:44% 22%;background-size:300%"></span><div class="bub"><span class="who-n">Sachbearbeiterin</span><b>Die kommt automatisch per Post.</b><small>Придёт автоматически, по почте.</small><button class="say" type="button" data-say="Die kommt automatisch per Post." aria-label="Озвучить"><svg><use href="#spk"/></svg></button></div></div>
+    </div>
+    <p class="dry-line rv">Разговор: <b>две минуты</b>. Ожидание Termin: <b>три недели</b>. Немецкий баланс.</p>
+    <p class="sc" style="margin-top:28px">Фразы-спасатели</p>
+    <div class="rescue">
+      <div class="phr rv"><button class="say" type="button" data-say="Können Sie das bitte langsamer sagen?" aria-label="Озвучить"><svg><use href="#spk"/></svg></button><div><b>Können Sie das bitte langsamer sagen?</b><small>Можете сказать помедленнее?</small></div></div>
+      <div class="phr rv"><button class="say" type="button" data-say="Können Sie das bitte wiederholen?" aria-label="Озвучить"><svg><use href="#spk"/></svg></button><div><b>Können Sie das bitte wiederholen?</b><small>Можете повторить?</small></div></div>
+      <div class="phr rv"><button class="say" type="button" data-say="Wo muss ich unterschreiben?" aria-label="Озвучить"><svg><use href="#spk"/></svg></button><div><b>Wo muss ich unterschreiben?</b><small>Где мне подписать?</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CALENDAR -->
+<section class="dark torn" id="cal">
+  <div class="night-bg" aria-hidden="true" style="opacity:.6"></div>
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--lime)"><svg class="ic"><use href="#i-timer"/></svg>Таймер</p>
+    <h2 class="px split" style="color:#fff">14 дней. <span class="or">Считаем.</span></h2>
+    <div class="cal-wrap">
+      <div class="cal rv">
+        <div class="cal-h">Календарь</div>
+        <div class="cal-m"><svg class="ic"><use href="#i-chevron-right"/></svg>März 2026<svg class="ic"><use href="#i-chevron-right"/></svg></div>
+        <div class="cal-g" id="calG"></div>
+      </div>
+      <div>
+        <div class="cal-count"><span id="calN">0</span> <small>/ 14 дней</small></div>
+        <div class="cal-legend" style="margin-top:14px">
+          <div><i style="background:var(--orange)"></i><span><b>1 марта</b>, день въезда. Таймер стартует.</span></div>
+          <div><i style="background:var(--green)"></i><span><b>15 марта</b>, последний день. Прийти можно и раньше.</span></div>
+          <div><i style="background:var(--red)"></i><span><b>16-е и дальше</b>: опоздал. Штраф могут выписать, а могут и нет. Проверять не советую.</span></div>
+        </div>
+        <p class="lede">Termin раньше не нашёлся? Запишись на ближайший свободный и сохрани подтверждение. Это показывает, что ты пытался.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- UNLOCKS -->
+<section id="after">
+  <div class="wrap">
+    <p class="eyebrow"><svg class="ic"><use href="#i-trophy"/></svg>Что открывает штамп</p>
+    <h2 class="px split">Награды <span class="or">уровня</span></h2>
+    <p class="lede">Meldebescheinigung это ключ. Без неё следующие двери закрыты.</p>
+    <div class="unl">
+      <div class="ach rv"><span class="lock">Открыто</span><div class="ai"><svg class="ic"><use href="#i-mail"/></svg></div><h4>Steuer-ID</h4><p>Налоговый номер приходит письмом сам. Без него работодатель не посчитает зарплату нормально.</p></div>
+      <div class="ach rv"><span class="lock">Открыто</span><div class="ai"><svg class="ic"><use href="#i-landmark"/></svg></div><h4>Bankkonto</h4><p>Банки спрашивают адрес в Германии. Справка о прописке закрывает вопрос.</p></div>
+      <div class="ach rv"><span class="lock">Открыто</span><div class="ai"><svg class="ic"><use href="#i-briefcase"/></svg></div><h4>Работа</h4><p>Отдел кадров попросит адрес и Steuer-ID. Обе вещи ты уже получил.</p></div>
+      <div class="ach rv"><span class="lock">Бонус</span><div class="ai" style="background:var(--orange)"><svg class="ic"><use href="#i-mail"/></svg></div><h4>Rundfunk&shy;beitrag</h4><p>Придёт письмо про сбор за ТВ и радио. Это не спам. Платят один раз на квартиру, а не с каждого жильца.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section id="quiz">
+  <div class="wrap">
+    <p class="eyebrow"><svg class="ic"><use href="#i-gamepad-2"/></svg>Финальный босс</p>
+    <h2 class="px split">Шесть <span class="or">вопросов</span></h2>
+    <div class="quiz rv" id="qz" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- CHEAT -->
+<section id="cheat">
+  <div class="wrap">
+    <p class="sc c" style="font-size:clamp(30px,8vw,46px)">Мой чит-код</p>
+    <h2 class="px split c">Anmeldung <span class="or">на одном</span> экране</h2>
+    <div class="cheat">
+      <div class="ck rv">
+        <p class="sc">Что взять</p>
+        <ul>
+          <li><svg class="gem"><use href="#gem"/></svg><span><b>Reisepass</b>: паспорт (ID-карта для ЕС), плюс виза или ВНЖ, если есть</span></li>
+          <li><svg class="gem"><use href="#gem"/></svg><span><b>Wohnungsgeberbestätigung</b> с подписью Vermieter</span></li>
+          <li><svg class="gem"><use href="#gem"/></svg><span><b>Anmeldeformular</b>, заполненный заранее</span></li>
+          <li><svg class="gem"><use href="#gem"/></svg><span>С семьёй: <b>Heiratsurkunde</b>, <b>Geburtsurkunde</b></span></li>
+        </ul>
+      </div>
+      <div class="ck rv">
+        <p class="sc">Что запомнить</p>
+        <ul>
+          <li><svg class="gem"><use href="#gem"/></svg><span><b>14 дней</b> с даты въезда. Бесплатно</span></li>
+          <li><svg class="gem"><use href="#gem"/></svg><span><b>an</b> = въехал, <b>um</b> = переехал, <b>ab</b> = уехал насовсем</span></li>
+          <li><svg class="gem"><use href="#gem"/></svg><span>Mietvertrag ≠ Wohnungsgeberbestätigung</span></li>
+          <li><svg class="gem"><use href="#gem"/></svg><span>Религия: <b>keine</b>, если не в церкви</span></li>
+          <li><svg class="gem"><use href="#gem"/></svg><span>Steuer-ID придёт сама. Meldebescheinigung храни</span></li>
+        </ul>
+      </div>
+      <div class="ck rv">
+        <p class="sc">Что сказать</p>
+        <div class="chips">
+          <button type="button" data-say="Ich möchte mich anmelden."><svg class="ic"><use href="#i-volume-2"/></svg>Ich möchte mich anmelden.</button>
+          <button type="button" data-say="Ich habe einen Termin um zehn."><svg class="ic"><use href="#i-volume-2"/></svg>Ich habe einen Termin um zehn.</button>
+          <button type="button" data-say="Ich bin am ersten März eingezogen."><svg class="ic"><use href="#i-volume-2"/></svg>Ich bin am 1. März eingezogen.</button>
+          <button type="button" data-say="Können Sie das bitte langsamer sagen?"><svg class="ic"><use href="#i-volume-2"/></svg>Langsamer, bitte.</button>
+          <button type="button" data-say="Ich habe mich angemeldet."><svg class="ic"><use href="#i-volume-2"/></svg>Ich habe mich angemeldet.</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="plat" id="platform">
+  <div class="p-hero dark torn only-t">
+    <div class="bg" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="box">
+        <span class="chip gr"><svg class="ic"><use href="#i-sparkles"/></svg>Stellas · немецкий A0–C1</span>
+        <h2 class="px split">Это был <span class="or">туториал</span></h2>
+        <p class="sc wt" style="font-size:30px">Дальше начинается игра</p>
+        <p>После Anmeldung придут Finanzamt, Krankenkasse, Hausverwaltung, родительское собрание. Это тоже уровни. И на каждом говорят по-немецки.</p>
+        <a class="btn" href="#tiers"><svg class="ic"><use href="#i-play"/></svg>Начать игру</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="nums">
+      <div class="nm rv"><b class="count" data-to="310">310</b><span>гайдов от A0 до C1, как этот</span></div>
+      <div class="nm rv"><b class="count" data-to="2500">2500</b><span>слов с озвучкой и транскрипцией</span></div>
+      <div class="nm rv"><b class="count" data-to="46">46</b><span>жизненных ситуаций: врач, банк, JobCenter, жильё</span></div>
+      <div class="nm rv"><b class="count" data-to="36">36</b><span>рабочих сценариев: собеседование, больничный, звонок</span></div>
+    </div>
+
+    <div class="tale rv">
+      <p>После прописки тебе пришло письмо. Письмо от Finanzamt. В письме слово Steueridentifikationsnummer.</p>
+      <p>Ты его сфоткал. Отправил другу. Друг не ответил. Друг тоже не понял.</p>
+      <p>Тогда ты позвонил подруге, которая живёт тут шесть лет. Она поняла. В третий раз за месяц.</p>
+      <p>Друзья не бесконечные. Язык да.</p>
+    </div>
+
+    <div class="vs">
+      <div class="now rv">
+        <h4>Сейчас</h4>
+        <ul>
+          <li><svg class="ic"><use href="#i-users"/></svg>На каждый Termin берёшь с собой человека-переводчика. Он уже устал, просто молчит</li>
+          <li><svg class="ic"><use href="#i-phone"/></svg>Позвонить в Hausverwaltung страшнее, чем месяц жить с текущим краном</li>
+          <li><svg class="ic"><use href="#i-briefcase"/></svg>Коллеги шутят на перерыве. Ты улыбаешься на всякий случай</li>
+          <li><svg class="ic"><use href="#i-baby"/></svg>Ребёнок уже поправляет твой немецкий. При всех</li>
+          <li><svg class="ic"><use href="#i-hourglass"/></svg>«Начну с понедельника». Прошло два года понедельников</li>
+        </ul>
+      </div>
+      <div class="yes rv">
+        <h4>Со Stellas</h4>
+        <ul>
+          <li><svg class="ic"><use href="#i-landmark"/></svg>Готовая лексика для госорганов, банка, жилья и работы. Фразы, а не списки слов</li>
+          <li><svg class="ic"><use href="#i-bot"/></svg>Gemini-приложения с диалогами и чатом с ИИ. Репетируешь звонок, пока никто не слышит</li>
+          <li><svg class="ic"><use href="#i-route"/></svg>Дорожная карта: A0–A2 за 28 недель, по 45–60 минут в день</li>
+          <li><svg class="ic"><use href="#i-graduation-cap"/></svg>Экзамены: Goethe, telc, DTZ, ÖSD, TestDaF. Для визы, работы, гражданства</li>
+          <li><svg class="ic"><use href="#i-wifi-off"/></svg>Работает офлайн в Notion. В очереди в Bürgeramt тоже</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="made">
+      <p class="sc">Загляни внутрь</p>
+      <h3 class="px">Что внутри платформы</h3>
+      <div class="shows">
+        <figure class="shw rv">
+          <div class="browser"><div class="bar"><i></i><i></i><i></i><span>Notion · Работа, документы, госорганы</span></div><img src="media/p7-work.webp" alt="Раздел Notion: работа, документы, госорганы" loading="lazy"></div>
+          <figcaption>Госорганы<small>JobCenter, поиск работы, разговор с консультантом. Тот самый следующий уровень.</small></figcaption>
+        </figure>
+        <figure class="shw rv">
+          <div class="phone"><video class="vid" muted loop playsinline preload="none" data-poster="media/app-mobile.jpg"><source src="media/app-mobile.mp4" type="video/mp4"></video></div>
+          <figcaption>С телефона<small>Карточки, озвучка, прогресс. Пять минут в очереди тоже считаются.</small></figcaption>
+        </figure>
+        <figure class="shw rv">
+          <div class="browser"><div class="bar"><i></i><i></i><i></i><span>Gemini · Vokabeln</span></div><video class="vid" muted loop playsinline preload="none" data-poster="media/gemini-vocab.jpg"><source src="media/gemini-vocab.mp4" type="video/mp4"></video></div>
+          <figcaption>Слова с озвучкой<small>Нажал на слово и услышал. Как здесь, только по каждой теме.</small></figcaption>
+        </figure>
+        <figure class="shw rv">
+          <div class="browser"><div class="bar"><i></i><i></i><i></i><span>Gemini · Dialog</span></div><video class="vid" muted loop playsinline preload="none" data-poster="media/gemini-chat.jpg"><source src="media/gemini-chat.mp4" type="video/mp4"></video></div>
+          <figcaption>Диалоги<small>Персонаж говорит, ты выбираешь ответ. Тренировка до настоящего Termin.</small></figcaption>
+        </figure>
+        <figure class="shw rv">
+          <div class="phone"><video class="vid" muted loop playsinline preload="none" data-poster="media/guide-scroll.jpg"><source src="media/guide-scroll.mp4" type="video/mp4"></video></div>
+          <figcaption>Гайды как этот<small>«Как объясниться у врача». Листается, говорит, проверяет.</small></figcaption>
+        </figure>
+        <figure class="shw rv">
+          <div class="browser"><div class="bar"><i></i><i></i><i></i><span>Notion · Wohnung</span></div><img src="media/p4-words.webp" alt="Карточки слов про квартиру с кнопкой озвучки" loading="lazy"></div>
+          <figcaption>Квартира<small>die Miete, die Kaution, der Mietvertrag. Слова, которые понадобятся сразу после этого квеста.</small></figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <p class="eyebrow" style="margin-top:44px"><svg class="ic"><use href="#i-map"/></svg>Другие квесты на платформе</p>
+    <div class="gal">
+      <figure><div class="phone"><img src="media/g-zuhause.webp" alt="Гайд: дом по-немецки" loading="lazy"></div><figcaption>Дом по-немецки</figcaption></figure>
+      <figure><div class="phone"><img src="media/g-arzt.webp" alt="Гайд: у врача" loading="lazy"></div><figcaption>У врача</figcaption></figure>
+      <figure><div class="phone"><img src="media/g-brief.webp" alt="Гайд: письмо на немецком" loading="lazy"></div><figcaption>Письмо в Amt</figcaption></figure>
+      <figure><div class="phone"><img src="media/g-wege.webp" alt="Гайд: как пройти" loading="lazy"></div><figcaption>Как пройти</figcaption></figure>
+      <figure><div class="phone"><img src="media/g-geld.webp" alt="Гайд: деньги по-немецки" loading="lazy"></div><figcaption>Деньги</figcaption></figure>
+      <figure><div class="phone"><img src="media/g-beruf.webp" alt="Гайд: профессия по-немецки" loading="lazy"></div><figcaption>Профессия</figcaption></figure>
+    </div>
+
+    <p class="eyebrow" style="margin-top:30px"><svg class="ic"><use href="#i-message-circle"/></svg>Отзывы · как есть</p>
+    <div class="revs">
+      <img src="media/r3.webp" alt="Отзыв студентки о платформе" loading="lazy">
+      <img src="media/r5.webp" alt="Отзыв студента о платформе" loading="lazy">
+      <img src="media/r1.webp" alt="Отзыв студентки о платформе" loading="lazy">
+      <img src="media/r2.webp" alt="Отзыв студента о платформе" loading="lazy">
+    </div>
+
+    <div id="tiers" style="padding-top:30px">
+      <p class="sc c">Выбери формат участия</p>
+      <h2 class="px split c">Твой <span class="or">персонаж</span></h2>
+      <div class="tiers">
+        <article class="tier rv">
+          <div class="tp" style="background-image:url(media/confused.webp)"></div>
+          <h3>Новичок</h3>
+          <span class="acc">A0–A2 · доступ навсегда</span>
+          <ul>
+            <li><svg class="gem"><use href="#gem"/></svg>Грамматика A0–A2 с видео и разбором ответов</li>
+            <li><svg class="gem"><use href="#gem"/></svg>Лексика для жизни: врач, банк, госорганы</li>
+            <li><svg class="gem"><use href="#gem"/></svg>Дорожная карта на 28 недель</li>
+            <li><svg class="gem"><use href="#gem"/></svg>Трекер, флеш-карты, фильмы по уровню</li>
+            <li class="off"><svg class="gem"><use href="#gem"/></svg>B1–C1 и Gemini-приложения</li>
+            <li class="off"><svg class="gem"><use href="#gem"/></svg>A0–A2 на украинском</li>
+          </ul>
+          <p class="now-l">Цена</p>
+          <div class="amt">20 €</div>
+          <a class="btn" href="https://app.lava.top/801303618?tabId=products&sort=published" target="_blank" rel="noopener">Присоединиться</a>
+        </article>
+        <article class="tier mid rv">
+          <div class="tp" style="background-image:url(media/beamtin.webp)"></div>
+          <h3>Игрок</h3>
+          <span class="acc">B1–C1 · доступ навсегда</span>
+          <ul>
+            <li><svg class="gem"><use href="#gem"/></svg>Грамматика B1, B2, C1</li>
+            <li><svg class="gem"><use href="#gem"/></svg>Gemini-приложения: текст, диалоги, тест, чат с ИИ</li>
+            <li><svg class="gem"><use href="#gem"/></svg>Экзамены: Goethe, telc, ÖSD, TestDaF, DTZ</li>
+            <li><svg class="gem"><use href="#gem"/></svg>Дискуссионные темы B2–C1</li>
+            <li class="off"><svg class="gem"><use href="#gem"/></svg>Старт с нуля A0–A2</li>
+            <li class="off"><svg class="gem"><use href="#gem"/></svg>A0–A2 на украинском</li>
+          </ul>
+          <p class="now-l">Цена</p>
+          <div class="amt">20 €</div>
+          <a class="btn" href="https://app.lava.top/801303618?tabId=products&sort=published" target="_blank" rel="noopener">Присоединиться</a>
+        </article>
+        <article class="tier top rv">
+          <span class="flag">Выгоднее</span>
+          <div class="tp" style="background-image:url(media/learner.webp)"></div>
+          <h3>Главный герой</h3>
+          <span class="acc">A0–C1 · обе платформы</span>
+          <ul>
+            <li><svg class="gem"><use href="#gem"/></svg>Всё из «Новичка» и «Игрока»</li>
+            <li><svg class="gem"><use href="#gem"/></svg>310+ гайдов и 2500+ слов с озвучкой</li>
+            <li><svg class="gem"><use href="#gem"/></svg>Экзамены и лексика для жизни в Германии</li>
+            <li><svg class="gem"><use href="#gem"/></svg>Все будущие обновления бесплатно</li>
+            <li><svg class="gem"><use href="#gem"/></svg>Бонус: A0–A2 на украинском</li>
+          </ul>
+          <p class="old">40 €</p>
+          <div class="amt">30 €</div>
+          <a class="btn" href="https://app.lava.top/801303618?tabId=products&sort=published" target="_blank" rel="noopener">Присоединиться</a>
+          <a class="link pre" href="https://t.me/stellasdeutsch" target="_blank" rel="noopener" style="color:#fff">Вопрос в Telegram</a>
+        </article>
+      </div>
+      <p class="fine">Оплата один раз, доступ навсегда. Платформа работает в Notion: скачиваешь приложение на телефон или ноутбук и занимаешься даже без интернета. Цену планируем поднять после новых обновлений, кто уже купил, получает их бесплатно. Вопросы пиши в Telegram: <a href="https://t.me/stellasdeutsch" target="_blank" rel="noopener">@stellasdeutsch</a></p>
+    </div>
+
+    <div class="final">
+      <svg class="gem big float" aria-hidden="true" style="margin:0 auto 14px;display:block"><use href="#gem"/></svg>
+      <h2 class="px split">Anmeldung <span class="or">пройдена.</span> Осталось 309.</h2>
+      <p>Ты уже понял, что это не страшно. Это просто язык. Бумажка за бумажкой, фраза за фразой.</p>
+      <div class="cta-row"><a class="btn or" href="https://app.lava.top/801303618?tabId=products&sort=published" target="_blank" rel="noopener">Забрать всё за 30 € →</a></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer><div class="wrap"><span>Stellas · немецкий без воды</span><span>Квест: Anmeldung · 2026</span></div></footer>
+
+
+<div class="dock" id="dock" aria-hidden="true">
+  <p><b>30 €</b>A0–C1 · навсегда</p>
+  <a class="btn" href="https://app.lava.top/801303618?tabId=products&sort=published" target="_blank" rel="noopener" tabindex="-1">Начать игру →</a>
+</div>
+
+
+<script>
+function questInit(){
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var G = window.gsap && window.ScrollTrigger ? window.gsap : null;
+  var AD = !!document.getElementById('platform');
+  document.documentElement.classList.add('js');
+  if(G){
+    try{ G.registerPlugin(ScrollTrigger); window.SplitText && G.registerPlugin(SplitText); window.MotionPathPlugin && G.registerPlugin(MotionPathPlugin); }catch(e){ G = null; }
+  }
+  if(G){ document.documentElement.classList.add('gs'); ScrollTrigger.config({ignoreMobileResize:true}); }
+  var MP = G && window.MotionPathPlugin, ST = G && window.SplitText;
+  var anim = G && !reduce;
+  function $(s,r){ return (r||document).querySelector(s); }
+  function $$(s,r){ return Array.prototype.slice.call((r||document).querySelectorAll(s)); }
+
+  /* ---------- speech ---------- */
+  var tts = 'speechSynthesis' in window;
+  if(!tts) document.documentElement.classList.add('no-tts');
+  var deVoice = null;
+  function pickVoice(){ try{ var v = speechSynthesis.getVoices(); deVoice = v.find(function(x){return /^de/i.test(x.lang)}) || null; }catch(e){} }
+  if(tts){ pickVoice(); try{ speechSynthesis.onvoiceschanged = pickVoice; }catch(e){} }
+  function say(text, btn){
+    if(!tts || !text) return;
+    try{
+      speechSynthesis.cancel();
+      var u = new SpeechSynthesisUtterance(text);
+      u.lang = 'de-DE'; u.rate = .88; if(deVoice) u.voice = deVoice;
+      if(btn){ btn.classList.add('on'); u.onend = u.onerror = function(){ btn.classList.remove('on'); }; }
+      speechSynthesis.speak(u);
+    }catch(e){}
+  }
+  document.addEventListener('click', function(e){
+    var b = e.target.closest('[data-say]');
+    if(!b) return;
+    say(b.dataset.say, b.classList.contains('say') ? b : null);
+    if(anim) G.fromTo(b, {scale:.9, rotation:-4}, {scale:1, rotation:0, duration:.6, ease:'elastic.out(1.1,.4)'});
+  });
+
+  function whenVisible(el, on, off, th){
+    if(!el) return;
+    if(!('IntersectionObserver' in window)){ on(); return; }
+    new IntersectionObserver(function(es){ es.forEach(function(en){ en.isIntersecting ? on() : (off && off()); }); }, {threshold:th||.25}).observe(el);
+  }
+
+  /* ---------- reveal ---------- */
+  if(anim){
+    ScrollTrigger.batch('.rv', {start:'top 90%', once:true, onEnter:function(els){
+      G.from(els, {y:40, rotation:function(i){ return i%2 ? 2 : -2; }, scale:.96, duration:.8, ease:'back.out(1.6)', stagger:.08});
+    }});
+  } else if('IntersectionObserver' in window){
+    var rio = new IntersectionObserver(function(es){ es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); rio.unobserve(en.target); } }); }, {rootMargin:'0px 0px -8% 0px'});
+    $$('.rv').forEach(function(el){ rio.observe(el); });
+  } else $$('.rv').forEach(function(el){ el.classList.add('in'); });
+
+  /* ---------- pixel headings: chars drop in ---------- */
+  if(anim && ST){
+    $$('.px.split').forEach(function(h){
+      var s = new SplitText(h, {type:'words,chars', wordsClass:'wd', charsClass:'ch'});
+      G.from(s.chars, {yPercent:-120, rotation:function(){ return G.utils.random(-14,14); }, scale:.4, duration:.7, ease:'back.out(2.4)', stagger:{each:.025, from:'random'},
+        scrollTrigger:{trigger:h, start:'top 88%', once:true}});
+    });
+  }
+
+  /* ---------- scroll progress + crystal percent ---------- */
+  var prog = $('#prog'), lvl = $('#lvlNum'), pc = $('#pcNum'), lastP = -1;
+  function onScroll(){
+    var d = document.documentElement, max = d.scrollHeight - d.clientHeight, p = max > 0 ? Math.min(1, d.scrollTop / max) : 0;
+    var n = Math.round(p*100);
+    prog.style.transform = 'scaleX(' + p + ')';
+    if(n !== lastP){ lastP = n; lvl.textContent = n + '%'; if(pc) pc.textContent = n + '%'; }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  /* ---------- marquee ---------- */
+  if(anim){
+    $$('.band .track').forEach(function(t, i){
+      var tw = G.fromTo(t, {xPercent: i ? -50 : 0}, {xPercent: i ? 0 : -50, repeat:-1, ease:'none', duration:28});
+      ScrollTrigger.create({trigger:t.parentNode, start:'top bottom', end:'bottom top', onUpdate:function(self){
+        var v = Math.min(4, Math.abs(self.getVelocity())/400);
+        G.to(tw, {timeScale:1+v, duration:.3, overwrite:true}); G.to(tw, {timeScale:1, duration:1, delay:.3});
+      }});
+    });
+  }
+
+  /* ---------- counters ---------- */
+  $$('.count[data-to]').forEach(function(el){
+    var to = +el.dataset.to, plus = to >= 100 ? '+' : '';
+    if(!anim){ el.textContent = to + plus; return; }
+    var o = {v:0};
+    G.to(o, {v:to, duration:1.6, ease:'power3.out', scrollTrigger:{trigger:el, start:'top 90%', once:true}, onUpdate:function(){ el.textContent = Math.round(o.v) + (o.v >= to ? plus : ''); }});
+  });
+
+  /* ---------- map path + popups ---------- */
+  var mapBox = $('#mapBox'), mapPath = $('#mapPath');
+  function drawMap(){
+    if(!mapBox) return;
+    var b = mapBox.getBoundingClientRect(), pts = $$('.pin', mapBox).map(function(p){ var r = p.getBoundingClientRect(); return [r.left - b.left + r.width/2, r.top - b.top + r.height/2]; });
+    var svg = mapPath.ownerSVGElement; svg.setAttribute('viewBox', '0 0 ' + b.width + ' ' + b.height);
+    var d = 'M' + pts[0][0] + ',' + pts[0][1];
+    for(var i=1;i<pts.length;i++){ var a = pts[i-1], c = pts[i], my = (a[1]+c[1])/2; d += ' C' + a[0] + ',' + my + ' ' + c[0] + ',' + my + ' ' + c[0] + ',' + c[1]; }
+    mapPath.setAttribute('d', d);
+  }
+  drawMap(); window.addEventListener('resize', drawMap);
+  if(anim && mapBox){
+    var svgP = mapPath.ownerSVGElement, wide = matchMedia('(min-width:900px)');
+    ScrollTrigger.create({trigger:mapBox, start:'top 75%', end:'bottom 70%', scrub:.6, onUpdate:function(s){
+      var r = (100 - s.progress*100).toFixed(1) + '%';
+      svgP.style.clipPath = wide.matches ? 'inset(0 ' + r + ' 0 0)' : 'inset(0 0 ' + r + ' 0)';
+    }});
+    svgP.style.clipPath = wide.matches ? 'inset(0 100% 0 0)' : 'inset(0 0 100% 0)';
+    $$('.loc', mapBox).forEach(function(l){
+      G.from($('.isl', l), {scale:.5, rotation:-8, duration:.9, ease:'elastic.out(1,.5)', scrollTrigger:{trigger:l, start:'top 82%', once:true}});
+      G.from($('.pin', l), {y:-60, duration:.8, ease:'bounce.out', delay:.25, scrollTrigger:{trigger:l, start:'top 82%', once:true}});
+    });
+  }
+  var LOC = [
+    {i:'media/loc-camp.webp', s:'Локация 0', t:'Прибытие', l:['Ты в Германии, но для системы тебя пока нет.','Отель или временное жильё обычно не подходят: нужна квартира, где ты живёшь.','Задача уровня: найти жильё, где Vermieter готов подписать бумажку.']},
+    {i:'media/loc-home.webp', s:'Локация 1', t:'Квартира', l:['Въехал: таймер 14 дней пошёл.','Попроси у Vermieter Wohnungsgeberbestätigung. Это отдельный лист, не договор.','Проверь, что в листе есть дата въезда, адрес и подпись.']},
+    {i:'media/loc-amt.webp', s:'Локация 2', t:'Bürgeramt', l:['Запишись онлайн на Termin. Подойдёт любое Bürgeramt твоего города.','Возьми паспорт, бумажку от Vermieter и анкету.','Первая фраза: «Guten Tag, ich möchte mich anmelden.»']},
+    {i:'media/loc-bank.webp', s:'Локация 3', t:'Награда', l:['На руках Meldebescheinigung. Сфоткай и храни оригинал.','Steuer-ID придёт письмом примерно через 2–4 недели.','Теперь открываются банк, работа, страховка и всё остальное.']}
+  ];
+  var pop = $('#pop'), lastFocus = null;
+  function openPop(i){
+    var d = LOC[i]; lastFocus = document.activeElement;
+    $('#popI').src = d.i; $('#popS').textContent = d.s; $('#popT').textContent = d.t;
+    $('#popL').innerHTML = d.l.map(function(x){ return '<li><svg class="gem"><use href="#gem"/></svg><span>' + x + '</span></li>'; }).join('');
+    pop.classList.add('open'); $('#popX').focus({preventScroll:true});
+    if(anim) G.from($$('#popL li'), {x:30, duration:.5, ease:'back.out(2)', stagger:.08, delay:.15});
+  }
+  function closePop(){ pop.classList.remove('open'); lastFocus && lastFocus.focus({preventScroll:true}); }
+  $$('.loc').forEach(function(l){ l.addEventListener('click', function(){ openPop(+l.dataset.loc); }); });
+  $('#popX').addEventListener('click', closePop);
+  pop.addEventListener('click', function(e){ if(e.target === pop) closePop(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && pop.classList.contains('open')) closePop(); });
+
+  /* ---------- what scene: address flies to the city, stamp flies back ---------- */
+  (function(){
+    var box = $('#ws'), doc = $('#wsD'), st = $('#wsS'), cap = $('#wsC');
+    if(!box) return;
+    function c(el){ var b = box.getBoundingClientRect(), r = el.getBoundingClientRect(); return {x:r.left - b.left + r.width/2, y:r.top - b.top + r.height/2}; }
+    function place(){ var a = c($('#wsA')); doc.style.left = a.x + 'px'; doc.style.top = (a.y - 24) + 'px'; }
+    place(); window.addEventListener('resize', place);
+    if(!anim) return;
+    var tl = null;
+    function build(){
+      place();
+      var a = c($('#wsA')), b = c($('#wsB')), dx = b.x - a.x;
+      tl = G.timeline({repeat:-1, repeatDelay:.6});
+      tl.set(cap, {textContent:'Ты сообщаешь адрес.'})
+        .fromTo(doc, {x:0, y:0, rotation:0, scale:.6}, {scale:1, duration:.4, ease:'back.out(3)'})
+        .to(doc, {motionPath:{path:[{x:0,y:0},{x:dx/2,y:-70},{x:dx,y:0}], curviness:1.4}, rotation:360, duration:1.2, ease:'power2.inOut'})
+        .set(cap, {textContent:'Город проверяет и ставит штамп.'})
+        .fromTo(st, {scale:.2, rotation:-40}, {scale:1.3, rotation:-12, duration:.5, ease:'elastic.out(1,.4)'})
+        .to(st, {scale:1, rotation:0, duration:.3})
+        .to(doc, {backgroundColor:'#5DBB46', color:'#fff', duration:.2})
+        .set(cap, {textContent:'Обратно прилетает Meldebescheinigung.'})
+        .to(doc, {motionPath:{path:[{x:dx,y:0},{x:dx/2,y:70},{x:0,y:0}], curviness:1.4}, rotation:0, duration:1.2, ease:'power2.inOut'})
+        .to(doc, {scale:1.2, duration:.2, yoyo:true, repeat:1})
+        .to(doc, {backgroundColor:'#fff', color:'#3C9A2C', duration:.3}, '+=.8');
+    }
+    whenVisible(box, function(){ if(!tl) build(); tl.play(); }, function(){ tl && tl.pause(); }, .3);
+  })();
+
+  /* ---------- quest stepper ---------- */
+  (function(){
+    var q = $('#quest'); if(!q) return;
+    var slides = $$('.q-slide', q), dots = $$('.q-dot', q), fill = $('#qFill'), cur = 0, auto = null, manual = false;
+    function set(n){
+      cur = (n + slides.length) % slides.length;
+      slides.forEach(function(s,i){ s.classList.toggle('on', i===cur); });
+      dots.forEach(function(d,i){ d.classList.toggle('cur', i===cur); d.classList.toggle('done', i<cur); });
+      fill.style.transform = 'scaleX(' + (cur/(slides.length-1)) + ')';
+      if(anim){
+        var s = slides[cur];
+        G.fromTo($('.qi', s), {scale:1.15}, {scale:1, duration:1.2, ease:'power3.out'});
+        G.from($$('.lv, h3, p, .phr', s), {y:24, duration:.6, ease:'back.out(2)', stagger:.07});
+        G.fromTo($('i', dots[cur]), {rotation:-20}, {rotation:0, duration:.8, ease:'elastic.out(1,.4)'});
+      }
+    }
+    function start(){ if(manual || reduce || auto) return; auto = setInterval(function(){ set(cur+1); }, 4800); }
+    function stop(){ clearInterval(auto); auto = null; }
+    dots.forEach(function(d){ d.addEventListener('click', function(){ manual = true; stop(); set(+d.dataset.s); }); });
+    $('#qNext').addEventListener('click', function(){ manual = true; stop(); set(cur+1); });
+    $('#qPrev').addEventListener('click', function(){ manual = true; stop(); set(cur-1); });
+    set(0);
+    whenVisible(q, start, stop, .35);
+  })();
+
+  /* ---------- inventory ---------- */
+  (function(){
+    var slots = $$('.slot'), got = 0, need = 3, msg = $('#invMsg'), n = $('#bagN'), ico = $('#bagIco'), box = $('#bagBox');
+    function tell(text, bad){
+      msg.classList.toggle('bad', !!bad);
+      msg.innerHTML = '<svg class="ic"><use href="#i-' + (bad ? 'triangle-alert' : 'circle-check') + '"/></svg><span>' + text + '</span>';
+      if(anim) G.fromTo(msg, {scale:.94}, {scale:1, duration:.5, ease:'elastic.out(1,.5)'});
+    }
+    function fly(from, done){
+      if(!anim || !MP){ done(); return; }
+      var f = document.createElement('div'); f.className = 'flyer'; f.innerHTML = $('.si', from).innerHTML; document.body.appendChild(f);
+      var a = from.getBoundingClientRect(), b = ico.getBoundingClientRect(), sx = a.left + a.width/2 - 20 + scrollX, sy = a.top + 20 + scrollY, ex = b.left + b.width/2 - 20 + scrollX, ey = b.top + b.height/2 - 20 + scrollY;
+      G.set(f, {left:0, top:0, x:sx, y:sy});
+      G.to(f, {motionPath:{path:[{x:sx,y:sy},{x:(sx+ex)/2,y:Math.min(sy,ey)-140},{x:ex,y:ey}], curviness:1.4}, rotation:360, scale:.6, duration:.9, ease:'power2.inOut', onComplete:function(){ f.remove(); done(); }});
+    }
+    slots.forEach(function(s){
+      s.addEventListener('click', function(){
+        if(s.classList.contains('got')) return;
+        var ok = s.dataset.ok === '1';
+        if(!ok){
+          s.classList.add('no'); tell(s.dataset.m, true);
+          if(anim) G.fromTo(s, {x:-10}, {x:0, duration:.6, ease:'elastic.out(1.2,.2)'});
+          setTimeout(function(){ s.classList.remove('no'); }, 1600);
+          return;
+        }
+        s.classList.add('got'); tell(s.dataset.m, false);
+        fly(s, function(){
+          got++; n.textContent = got + '/' + need;
+          if(anim) G.fromTo(ico, {scale:1.25, rotation:-10}, {scale:1, rotation:0, duration:.7, ease:'elastic.out(1,.4)'});
+          if(got === need){
+            box.classList.add('full'); $('#bagT').textContent = 'Рюкзак собран';
+            $('#bagP').textContent = 'Уровень пройден. С этим набором тебя не развернут.';
+            if(anim) G.fromTo(box, {scale:.92}, {scale:1, duration:.9, ease:'elastic.out(1,.4)'});
+          }
+        });
+      });
+    });
+  })();
+
+  /* ---------- melden machine ---------- */
+  (function(){
+    var M = {
+      an:{s:'въехал → прописался', t:'Первый адрес в Германии. Это наш квест.', de:'Ich melde mich an.', ru:'Я прописываюсь.'},
+      um:{s:'переехал → перепрописался', t:'Новая квартира в Германии. Снова 14 дней, но уже в новом городе или районе.', de:'Ich melde mich um.', ru:'Я меняю адрес регистрации.'},
+      ab:{s:'уехал → выписался', t:'Уезжаешь из Германии насовсем. Тоже идёшь в Amt, только с обратной стороны.', de:'Ich melde mich ab.', ru:'Я выписываюсь.'}
+    };
+    var btns = $$('.pfx button'), p = $('#mP'), life = $$('.life div');
+    btns.forEach(function(b){ b.addEventListener('click', function(){
+      var k = b.dataset.p, d = M[k];
+      btns.forEach(function(x){ x.classList.toggle('on', x===b); });
+      life.forEach(function(x){ x.classList.toggle('on', x.dataset.p===k); });
+      function swap(){ p.textContent = k; $('#mS').textContent = d.s; $('#mT').textContent = d.t; $('#mDe').textContent = d.de; $('#mRu').textContent = d.ru; $('#mSay').dataset.say = d.de; }
+      if(anim){
+        G.timeline().to(p, {rotationX:90, y:-10, duration:.18, ease:'power2.in', onComplete:swap})
+          .fromTo(p, {rotationX:-90, y:10}, {rotationX:0, y:0, duration:.5, ease:'back.out(3)'})
+          .fromTo('.mean', {y:14}, {y:0, duration:.5, ease:'back.out(2)'}, '<');
+      } else swap();
+    }); });
+  })();
+
+  /* ---------- prefix flight ---------- */
+  (function(){
+    var fl = $('#flight'); if(!fl) return;
+    var line = $('#flLine'), cap = $('#flCap'), stp = $('#flStep'), dots = $$('#flDots i'), k = 0, timer = null, running = false;
+    var S = [
+      {s:'Шаг 1 · Инфинитив', h:'<span class="t pa">an</span><span class="t">melden</span>', c:'Глагол целиком. Приставка <b>an</b> плюс корень <b>melden</b>.'},
+      {s:'Шаг 2 · Ловушка', h:'<span class="t">Ich</span><span class="t x">anmelde</span><span class="t">mich.</span>', c:'Так не говорят. В настоящем времени приставка от корня <b>отрывается</b>.'},
+      {s:'Шаг 3 · Полёт', h:'<span class="t" id="flIch">Ich</span><span class="t">melde</span><span class="t">mich</span><span class="t pa" id="flAn">an.</span>', c:'Приставка улетает в самый конец. <b>Ich melde mich an.</b>'},
+      {s:'Шаг 4 · Perfekt', h:'<span class="t">Ich</span><span class="t">habe</span><span class="t">mich</span><span class="t"><span class="pa">an</span><span class="ge" id="flGe">ge</span>meldet.</span>', c:'В прошедшем <b>ge</b> встаёт между приставкой и корнем: <b>angemeldet</b>.'}
+    ];
+    function show(i){
+      k = i; var d = S[i];
+      line.innerHTML = d.h; cap.innerHTML = d.c; stp.textContent = d.s;
+      dots.forEach(function(x,j){ x.classList.toggle('on', j===i); });
+      if(!anim) return;
+      G.from($$('.t', line), {y:30, rotation:function(j){ return j%2 ? 6 : -6; }, duration:.55, ease:'back.out(2.4)', stagger:.07});
+      if(i === 2 && MP){
+        var an = $('#flAn'), ich = $('#flIch'), lr = line.getBoundingClientRect(), ar = an.getBoundingClientRect(), ir = ich.getBoundingClientRect();
+        var sx = ir.right + 10 - ar.left, sy = ir.top - ar.top;
+        G.killTweensOf(an);
+        G.fromTo(an, {x:sx, y:sy}, {motionPath:{path:[{x:sx,y:sy},{x:sx/2,y:Math.min(sy,0)-80},{x:0,y:0}], curviness:1.5}, rotation:360, duration:1.3, ease:'power2.inOut', delay:.35});
+      }
+      if(i === 3){ G.fromTo('#flGe', {y:-90, scale:.4}, {y:0, scale:1, duration:1, ease:'bounce.out', delay:.4}); }
+      if(i === 1){ G.fromTo($('.x', line), {rotation:0}, {rotation:-3, duration:.12, yoyo:true, repeat:5, delay:.6}); }
+    }
+    show(reduce ? 2 : 0);
+    function loop(){ timer = setTimeout(function(){ if(!running) return; show((k+1) % S.length); loop(); }, k === 2 ? 3800 : 3200); }
+    if(!reduce) whenVisible(fl, function(){ if(running) return; running = true; loop(); }, function(){ running = false; clearTimeout(timer); }, .3);
+    fl.addEventListener('click', function(){ clearTimeout(timer); show((k+1) % S.length); if(running) loop(); });
+  })();
+
+  /* ---------- form typing ---------- */
+  (function(){
+    var vals = $$('#formBox .val'), done = false;
+    function fillAll(){ vals.forEach(function(v){ v.textContent = v.dataset.v; }); }
+    function type(){
+      if(done) return; done = true;
+      if(reduce){ fillAll(); return; }
+      var i = 0;
+      (function next(){
+        if(i >= vals.length) return;
+        var v = vals[i], f = v.parentNode, txt = v.dataset.v, j = 0;
+        f.classList.add('typing');
+        var t = setInterval(function(){
+          j++; v.textContent = txt.slice(0, j);
+          if(j >= txt.length){ clearInterval(t); f.classList.remove('typing'); i++; setTimeout(next, 160); }
+        }, 42);
+      })();
+    }
+    if('IntersectionObserver' in window) whenVisible($('#formBox'), type, null, .3); else fillAll();
+    $$('#famOpts button').forEach(function(b){ b.addEventListener('click', function(){ $$('#famOpts button').forEach(function(x){ x.classList.toggle('on', x===b); }); }); });
+    var rm = $('#relMsg');
+    $$('#relOpts button').forEach(function(b){ b.addEventListener('click', function(){
+      var bad = b.dataset.r === '1';
+      $$('#relOpts button').forEach(function(x){ x.classList.remove('on','warn'); });
+      b.classList.add(bad ? 'warn' : 'on');
+      rm.className = 'trapmsg show' + (bad ? '' : ' ok');
+      rm.textContent = bad ? 'Стоп. Теперь Finanzamt считает тебя членом церкви и удерживает Kirchensteuer. Если ты не в церкви, это деньги из ниоткуда.' : 'Правильно. Не член церкви, значит keine. Kirchensteuer не будет.';
+      if(anim) bad ? G.fromTo(b.closest('.fld'), {x:-12}, {x:0, duration:.7, ease:'elastic.out(1.2,.2)'}) : G.fromTo(b, {scale:.8}, {scale:1, duration:.6, ease:'elastic.out(1,.4)'});
+    }); });
+  })();
+
+  /* ---------- chat bubbles ---------- */
+  if(anim){
+    ScrollTrigger.batch('#chat .msg', {start:'top 88%', once:true, onEnter:function(els){
+      els.forEach(function(m, i){
+        var me = m.classList.contains('me');
+        G.from(m, {x: me ? 60 : -60, scale:.85, rotation: me ? 4 : -4, duration:.7, ease:'back.out(2)', delay:i*.18});
+        G.from($('.av', m), {scale:.3, duration:.6, ease:'elastic.out(1,.4)', delay:i*.18 + .1});
+      });
+    }});
+  }
+
+  /* ---------- calendar ---------- */
+  (function(){
+    var g = $('#calG'); if(!g) return;
+    var h = ['Mo','Di','Mi','Do','Fr','Sa','So'].map(function(d){ return '<span class="dn">' + d + '</span>'; }).join('');
+    for(var i=23;i<=28;i++) h += '<span class="d ghost">' + i + '</span>';
+    for(var d=1; d<=31; d++) h += '<span class="d" data-d="' + d + '">' + d + '</span>';
+    for(var j=1;j<=5;j++) h += '<span class="d ghost">' + j + '</span>';
+    g.innerHTML = h;
+    var days = $$('.d[data-d]', g), cnt = $('#calN'), last = -1;
+    function paint(n){
+      if(n === last) return; last = n;
+      days.forEach(function(el){
+        var d = +el.dataset.d;
+        el.className = 'd' + (d===1 ? ' start' : (d<=n && d<15 ? ' in' : (d===15 && n>=15 ? ' end' : (d===16 && n>=16 ? ' late' : ''))));
+      });
+      cnt.textContent = Math.max(0, Math.min(14, n-1));
+      if(anim && n>1 && n<=16){ var el = days[n-1]; G.fromTo(el, {scale:.5}, {scale:1, duration:.5, ease:'back.out(3)'}); }
+    }
+    if(anim){
+      ScrollTrigger.create({trigger:g, start:'top 85%', end:'bottom 15%', scrub:true, onUpdate:function(s){ paint(1 + Math.round(s.progress*15)); }});
+      paint(1);
+    } else paint(16);
+  })();
+
+  /* ---------- unlocks ---------- */
+  if(anim){
+    G.from('.ach .ai', {scale:.3, rotation:-30, duration:.9, ease:'elastic.out(1,.45)', stagger:.12, scrollTrigger:{trigger:'.unl', start:'top 82%', once:true}});
+    G.from('.ach .lock', {x:30, duration:.6, ease:'back.out(2)', stagger:.12, delay:.3, scrollTrigger:{trigger:'.unl', start:'top 82%', once:true}});
+  }
+
+  /* ---------- quiz ---------- */
+  var Q = [
+    {c:'Ты только въехал в Германию', q:'Ich melde mich ___.', o:['an','ab','um'], k:0, x:'Первый адрес в стране. anmelden.'},
+    {c:'Переезжаешь в Вену. Насовсем.', q:'Ich melde mich ___.', o:['um','ab','an'], k:1, x:'Уезжаешь из Германии, значит выписываешься. abmelden.'},
+    {c:'Какую бумажку подписывает Vermieter?', q:'___', o:['Mietvertrag','Wohnungsgeberbestätigung','Meldebescheinigung'], k:1, x:'Mietvertrag это договор аренды. Amt нужна именно Wohnungsgeberbestätigung.', s:'die Wohnungsgeberbestätigung'},
+    {c:'Сколько дней даётся на Anmeldung?', q:'___ Tage', o:['7','14','30'], k:1, x:'Две недели с даты въезда. Zwei Wochen.', s:'vierzehn Tage'},
+    {c:'Perfekt. Как правильно?', q:'Ich habe mich ___.', o:['geanmeldet','anmeldet','angemeldet'], k:2, x:'ge встаёт между приставкой и корнем: an + ge + meldet.'},
+    {c:'Ты не член церкви. Что пишешь в поле Religion?', q:'___', o:['evangelisch','keine','römisch-katholisch'], k:1, x:'keine. Иначе Finanzamt начнёт удерживать Kirchensteuer.', s:'keine'}
+  ];
+  var qz = $('#qz'), qi = 0, res = [];
+  function bar(){ return '<div class="qbar">' + Q.map(function(_,i){ return '<i class="' + (res[i]===true?'ok':res[i]===false?'bad':i===qi?'cur':'') + '"></i>'; }).join('') + '</div>'; }
+  function drawQ(){
+    var it = Q[qi];
+    qz.innerHTML = bar() + '<p class="qn">Вопрос ' + (qi+1) + ' из ' + Q.length + '</p>' + '<p class="qc">' + it.c + '</p>' +
+      '<p class="qq">' + it.q.replace('___','<u id="blank">___</u>') + '</p>' +
+      '<div class="qo">' + it.o.map(function(o,i){ return '<button type="button" data-i="'+i+'">'+o+'</button>'; }).join('') + '</div>' +
+      '<div class="qx" id="qx"><svg class="ic"><use href="#i-brain"/></svg><span>Выбери вариант. Шпаргалка ниже, но без неё интереснее.</span></div>';
+    $$('.qo button', qz).forEach(function(b){ b.onclick = function(){ answer(+b.dataset.i); }; });
+    if(anim) G.from($$('.qo button', qz), {y:20, scale:.9, duration:.5, ease:'back.out(2)', stagger:.06});
+  }
+  function burstConfetti(n){
+    if(!anim) return;
+    var colors = ['#5DBB46','#B9F06A','#F28C38','#F8B36A','#FFFFFF','#3C9A2C'];
+    for(var i=0;i<n;i++){
+      var c = document.createElement('i'); c.className = 'conf'; c.style.background = colors[i%colors.length]; qz.appendChild(c);
+      G.fromTo(c, {x:0, y:0, rotation:0}, {x:G.utils.random(-260,260), y:G.utils.random(-220,160), rotation:G.utils.random(-540,540), opacity:0, duration:G.utils.random(1,1.8), ease:'power3.out', onComplete:(function(el){ return function(){ el.remove(); }; })(c)});
+    }
+  }
+  function answer(i){
+    var it = Q[qi], ok = i===it.k; res[qi] = ok;
+    $$('.qo button', qz).forEach(function(b){ b.disabled = true; var j=+b.dataset.i; if(j===it.k) b.classList.add('ok'); else if(j===i) b.classList.add('bad'); });
+    var chosen = $$('.qo button', qz)[i];
+    if(anim){ ok ? G.fromTo(chosen, {scale:.85}, {scale:1, duration:.6, ease:'elastic.out(1,.4)'}) : G.fromTo(chosen, {x:-8}, {x:0, duration:.5, ease:'elastic.out(1.2,.2)'}); }
+    var bl = $('#blank'); if(bl) bl.textContent = it.o[it.k];
+    var qx = $('#qx'); qx.classList.toggle('bad', !ok);
+    qx.innerHTML = '<svg class="ic"><use href="#i-' + (ok?'circle-check':'circle-x') + '"/></svg><span>' + (ok ? '<b>Верно.</b> ' : '<b>Мимо.</b> ') + it.x + '</span>';
+    if(ok) burstConfetti(12);
+    say(it.s || it.q.replace('___', it.o[it.k]));
+    $('.qbar', qz).outerHTML = bar();
+    var nb = document.createElement('button'); nb.className = 'btn qnext'; nb.type='button';
+    nb.innerHTML = qi < Q.length-1 ? 'Дальше <svg class="ic"><use href="#i-arrow-right"/></svg>' : 'Результат <svg class="ic"><use href="#i-trophy"/></svg>';
+    nb.onclick = function(){ qi++; qi < Q.length ? drawQ() : done(); };
+    qz.appendChild(nb); nb.focus({preventScroll:true});
+  }
+  function done(){
+    var s = res.filter(Boolean).length;
+    var msg = s===6 ? 'Шесть из шести. Можешь идти в Bürgeramt хоть завтра.' : s>=4 ? 'Почти. Перечитай про an, um, ab и про бумажку от Vermieter.' : 'Нормально для первого раза. Пролистай чит-код и попробуй ещё.';
+    var link = AD ? '<a class="btn or" href="#platform">Следующий уровень →</a>' : '<a class="btn or" href="#cheat">Чит-код →</a>';
+    qz.innerHTML = bar() + '<div class="qres"><div class="score">'+s+'/6</div><p class="qq" style="margin-top:6px">'+msg+'</p>' +
+      '<div class="cta-row"><button type="button" class="btn ghost" id="again"><svg class="ic"><use href="#i-repeat"/></svg> Ещё раз</button>' + link + '</div></div>';
+    $('#again').onclick = function(){ qi = 0; res = []; drawQ(); };
+    if(anim){ G.from('.qres .score', {scale:.3, rotation:-20, duration:1, ease:'elastic.out(1,.4)'}); burstConfetti(s*8); }
+  }
+  drawQ();
+
+  /* ---------- ad: tiers, videos, dock ---------- */
+  if(anim && AD){
+    G.from('.p-hero .box > *', {y:40, duration:.8, ease:'back.out(1.8)', stagger:.1, scrollTrigger:{trigger:'.p-hero', start:'top 70%', once:true}});
+    G.fromTo('.p-hero .bg', {scale:1.15}, {scale:1, ease:'none', scrollTrigger:{trigger:'.p-hero', start:'top bottom', end:'bottom top', scrub:true}});
+    G.from('.tier .tp', {scale:.6, rotation:-6, duration:.9, ease:'elastic.out(1,.5)', stagger:.12, scrollTrigger:{trigger:'.tiers', start:'top 80%', once:true}});
+    G.from('.gal figure', {y:60, rotation:function(i){ return i%2 ? 6 : -6; }, duration:.8, ease:'back.out(2)', stagger:.08, scrollTrigger:{trigger:'.gal', start:'top 88%', once:true}});
+  }
+  var pio = 'IntersectionObserver' in window ? new IntersectionObserver(function(es){ es.forEach(function(en){ if(en.isIntersecting){ var v = en.target; if(v.dataset.poster){ v.poster = v.dataset.poster; } pio.unobserve(v); } }); }, {rootMargin:'900px 0px'}) : null;
+  $$('video.vid').forEach(function(v){ pio ? pio.observe(v) : (v.poster = v.dataset.poster); });
+  $$('video.vid').forEach(function(v){
+    whenVisible(v, function(){ try{ v.preload='auto'; var p = v.play(); p && p.catch(function(){}); }catch(e){} }, function(){ try{ v.pause(); }catch(e){} });
+  });
+  var dock = $('#dock'), tiers = $('.tiers');
+  if(dock && tiers && 'IntersectionObserver' in window){
+    var pastHero = false, atPrice = false;
+    function upd(){ var s = pastHero && !atPrice; dock.classList.toggle('show', s); dock.setAttribute('aria-hidden', !s); $('a', dock).tabIndex = s ? 0 : -1; }
+    new IntersectionObserver(function(es){ es.forEach(function(en){ pastHero = !en.isIntersecting && en.boundingClientRect.top < 0; upd(); }); }).observe($('.hero'));
+    new IntersectionObserver(function(es){ es.forEach(function(en){ atPrice = en.isIntersecting; upd(); }); }).observe(tiers);
+  }
+
+  if(G){
+    window.addEventListener('load', function(){ drawMap(); ScrollTrigger.refresh(); });
+    if(document.fonts && document.fonts.ready) document.fonts.ready.then(function(){ drawMap(); ScrollTrigger.refresh(); });
+  }
+}
+if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', questInit); else questInit();
+</script>
+
+</body>
+</html>
