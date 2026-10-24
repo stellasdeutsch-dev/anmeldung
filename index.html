@@ -554,6 +554,13 @@ html.gs .band .track{animation:none}
 @media (min-width:900px){.shows{grid-template-columns:1fr 1fr 1fr;align-items:start}}
 .gal{display:grid;grid-auto-flow:column;grid-auto-columns:150px;gap:12px;overflow-x:auto;padding:8px var(--gut) 20px;margin:18px calc(var(--gut)*-1) 0;scrollbar-width:none;scroll-snap-type:x mandatory}
 .gal::-webkit-scrollbar{display:none}
+.win{display:block;width:100%;height:auto}
+.ngal{display:grid;grid-auto-flow:column;grid-auto-columns:min(86vw,560px);gap:6px;overflow-x:auto;padding:4px var(--gut) 16px;margin:10px calc(var(--gut)*-1) 0;scrollbar-width:none;scroll-snap-type:x mandatory;align-items:start}
+.ngal::-webkit-scrollbar{display:none}
+.ngal figure{margin:0;scroll-snap-align:center}
+.ngal figcaption{margin-top:2px;text-align:center;font-size:13px;line-height:1.4;color:var(--mute);padding:0 10px}
+.ngal figcaption b{display:block;font-size:15px;color:var(--ink,#2b2622)}
+
 .gal figure{margin:0;scroll-snap-align:start}
 .gal .phone{width:150px;border-radius:24px;padding:6px}
 .gal .phone img{border-radius:19px}
@@ -1228,8 +1235,8 @@ html.js:not(.gs) .rv:not(.in){translate:0 26px}
           <figcaption>Госорганы<small>JobCenter, поиск работы, разговор с консультантом. Тот самый следующий уровень.</small></figcaption>
         </figure>
         <figure class="shw rv">
-          <div class="phone"><video class="vid" muted loop playsinline preload="none" data-poster="media/app-mobile.jpg"><source src="media/app-mobile.mp4" type="video/mp4"></video></div>
-          <figcaption>С телефона<small>Карточки, озвучка, прогресс. Пять минут в очереди тоже считаются.</small></figcaption>
+          <img class="win" src="media/n-a0-srs.webp" alt="Notion: система интервальных повторений, карточки слов по уровням" loading="lazy">
+          <figcaption>Повторение слов<small>Карточки по уровням, повтор по расписанию. Пять минут в очереди тоже считаются.</small></figcaption>
         </figure>
         <figure class="shw rv">
           <div class="browser"><div class="bar"><i></i><i></i><i></i><span>Gemini · Vokabeln</span></div><video class="vid" muted loop playsinline preload="none" data-poster="media/gemini-vocab.jpg"><source src="media/gemini-vocab.mp4" type="video/mp4"></video></div>
@@ -1244,10 +1251,20 @@ html.js:not(.gs) .rv:not(.in){translate:0 26px}
           <figcaption>Гайды как этот<small>«Как объясниться у врача». Листается, говорит, проверяет.</small></figcaption>
         </figure>
         <figure class="shw rv">
-          <div class="browser"><div class="bar"><i></i><i></i><i></i><span>Notion · Wohnung</span></div><img src="media/p4-words.webp" alt="Карточки слов про квартиру с кнопкой озвучки" loading="lazy"></div>
-          <figcaption>Квартира<small>die Miete, die Kaution, der Mietvertrag. Слова, которые понадобятся сразу после этого квеста.</small></figcaption>
+          <img class="win" src="media/n-a0-lexik-topics.webp" alt="Notion: темы лексики, дома, на кухне, в гостиной, в спальне" loading="lazy">
+          <figcaption>Квартира<small>Дома, на кухне, в гостиной, в спальне. Слова, которые понадобятся сразу после этого квеста.</small></figcaption>
         </figure>
       </div>
+    </div>
+
+    <p class="eyebrow" style="margin-top:44px"><svg class="ic"><use href="#i-eye"/></svg>Вот как это выглядит в Notion</p>
+    <div class="ngal">
+      <figure><img class="win" src="media/n-a0-home.webp" alt="Notion: главная страница платформы A0–A2" loading="lazy"><figcaption><b>Главная</b>Грамматика, лексика, слова, план. Всё с одной страницы.</figcaption></figure>
+      <figure><img class="win" src="media/n-a0-hospital.webp" alt="Notion: лексика, больница, покупки и сервис" loading="lazy"><figcaption><b>Больница и магазин</b>У терапевта, в аптеке, звонок в страховую, возврат товара.</figcaption></figure>
+      <figure><img class="win" src="media/n-a0-city.webp" alt="Notion: повседневное общение и город, еда и заведения" loading="lazy"><figcaption><b>Город</b>Транспорт, билеты, контролёр, кафе, булочная.</figcaption></figure>
+      <figure><img class="win" src="media/n-a0-progress.webp" alt="Notion: прогресс по темам грамматики с уровнями" loading="lazy"><figcaption><b>Прогресс</b>Прошёл тему, поставил галочку. Видно, сколько осталось до A2.</figcaption></figure>
+      <figure><img class="win" src="media/n-a0-habits.webp" alt="Notion: трекеры привычек, чтение, слушание, разговор, письмо" loading="lazy"><figcaption><b>Трекеры</b>Чтение, слушание, разговор, письмо. Каждый день отдельной клеткой.</figcaption></figure>
+      <figure><img class="win" src="media/n-a0-exams.webp" alt="Notion: раздел экзаменов Goethe-Zertifikat A1–C1" loading="lazy"><figcaption><b>Экзамены</b>Goethe A1–C1, как готовиться и типичные ошибки.</figcaption></figure>
     </div>
 
     <p class="eyebrow" style="margin-top:44px"><svg class="ic"><use href="#i-map"/></svg>Другие квесты на платформе</p>
@@ -1756,6 +1773,7 @@ function questInit(){
     G.from('.p-hero .box > *', {y:40, duration:.8, ease:'back.out(1.8)', stagger:.1, scrollTrigger:{trigger:'.p-hero', start:'top 70%', once:true}});
     G.fromTo('.p-hero .bg', {scale:1.15}, {scale:1, ease:'none', scrollTrigger:{trigger:'.p-hero', start:'top bottom', end:'bottom top', scrub:true}});
     G.from('.tier .tp', {scale:.6, rotation:-6, duration:.9, ease:'elastic.out(1,.5)', stagger:.12, scrollTrigger:{trigger:'.tiers', start:'top 80%', once:true}});
+    G.from('.ngal figure', {y:50, opacity:0, duration:.8, ease:'power3.out', stagger:.08, scrollTrigger:{trigger:'.ngal', start:'top 88%', once:true}});
     G.from('.gal figure', {y:60, rotation:function(i){ return i%2 ? 6 : -6; }, duration:.8, ease:'back.out(2)', stagger:.08, scrollTrigger:{trigger:'.gal', start:'top 88%', once:true}});
   }
   var pio = 'IntersectionObserver' in window ? new IntersectionObserver(function(es){ es.forEach(function(en){ if(en.isIntersecting){ var v = en.target; if(v.dataset.poster){ v.poster = v.dataset.poster; } pio.unobserve(v); } }); }, {rootMargin:'900px 0px'}) : null;

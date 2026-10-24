@@ -554,6 +554,13 @@ html.gs .band .track{animation:none}
 @media (min-width:900px){.shows{grid-template-columns:1fr 1fr 1fr;align-items:start}}
 .gal{display:grid;grid-auto-flow:column;grid-auto-columns:150px;gap:12px;overflow-x:auto;padding:8px var(--gut) 20px;margin:18px calc(var(--gut)*-1) 0;scrollbar-width:none;scroll-snap-type:x mandatory}
 .gal::-webkit-scrollbar{display:none}
+.win{display:block;width:100%;height:auto}
+.ngal{display:grid;grid-auto-flow:column;grid-auto-columns:min(86vw,560px);gap:6px;overflow-x:auto;padding:4px var(--gut) 16px;margin:10px calc(var(--gut)*-1) 0;scrollbar-width:none;scroll-snap-type:x mandatory;align-items:start}
+.ngal::-webkit-scrollbar{display:none}
+.ngal figure{margin:0;scroll-snap-align:center}
+.ngal figcaption{margin-top:2px;text-align:center;font-size:13px;line-height:1.4;color:var(--mute);padding:0 10px}
+.ngal figcaption b{display:block;font-size:15px;color:var(--ink,#2b2622)}
+
 .gal figure{margin:0;scroll-snap-align:start}
 .gal .phone{width:150px;border-radius:24px;padding:6px}
 .gal .phone img{border-radius:19px}
@@ -1593,6 +1600,7 @@ function questInit(){
     G.from('.p-hero .box > *', {y:40, duration:.8, ease:'back.out(1.8)', stagger:.1, scrollTrigger:{trigger:'.p-hero', start:'top 70%', once:true}});
     G.fromTo('.p-hero .bg', {scale:1.15}, {scale:1, ease:'none', scrollTrigger:{trigger:'.p-hero', start:'top bottom', end:'bottom top', scrub:true}});
     G.from('.tier .tp', {scale:.6, rotation:-6, duration:.9, ease:'elastic.out(1,.5)', stagger:.12, scrollTrigger:{trigger:'.tiers', start:'top 80%', once:true}});
+    G.from('.ngal figure', {y:50, opacity:0, duration:.8, ease:'power3.out', stagger:.08, scrollTrigger:{trigger:'.ngal', start:'top 88%', once:true}});
     G.from('.gal figure', {y:60, rotation:function(i){ return i%2 ? 6 : -6; }, duration:.8, ease:'back.out(2)', stagger:.08, scrollTrigger:{trigger:'.gal', start:'top 88%', once:true}});
   }
   var pio = 'IntersectionObserver' in window ? new IntersectionObserver(function(es){ es.forEach(function(en){ if(en.isIntersecting){ var v = en.target; if(v.dataset.poster){ v.poster = v.dataset.poster; } pio.unobserve(v); } }); }, {rootMargin:'900px 0px'}) : null;
